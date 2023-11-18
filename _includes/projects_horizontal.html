@@ -1,32 +1,32 @@
 <div class="card-item col">
-  {%- if project.redirect -%}
-  <a href="{{ project.redirect }}">
+  {%- if paper-review.redirect -%}
+  <a href="{{ paper-review.redirect }}">
   {%- else -%}
-  <a href="{{ project.url | relative_url }}">
+  <a href="{{ paper-review.url | relative_url }}">
   {%- endif -%}
     <div class="card hoverable">
       <div class="row g-0">
-        {%- if project.img -%}
+        {%- if paper-review.img -%}
         <div class="card-img col-md-6">
-          {% include figure.html path=project.img alt="project thumbnail" %}
+          {% include figure.html path=paper-review.img alt="paper-review thumbnail" %}
         </div>
         <div class="col-md-6">
         {%- else -%}
         <div class="col-md-12">
         {%- endif -%}
           <div class="card-body">
-            <h3 class="card-title text-lowercase">{{ project.title }}</h3>
-            <p class="card-text">{{ project.description }}</p>
+            <h3 class="card-title text-lowercase">{{ paper-review.title }}</h3>
+            <p class="card-text">{{ paper-review.description }}</p>
             <div class="row ml-1 mr-1 p-0">
-              {%- if project.github -%}
+              {%- if paper-review.github -%}
               <div class="github-icon">
                 <div class="icon" data-toggle="tooltip" title="Code Repository">
-                  <a href="{{ project.github }}"><i class="fab fa-github gh-icon"></i></a>
+                  <a href="{{ paper-review.github }}"><i class="fab fa-github gh-icon"></i></a>
                 </div>
-                {%- if project.github_stars -%}
+                {%- if paper-review.github_stars -%}
                 <span class="stars" data-toggle="tooltip" title="GitHub Stars">
                   <i class="fas fa-star"></i>
-                  <span id="{{ project.github_stars }}-stars"></span>
+                  <span id="{{ paper-review.github_stars }}-stars"></span>
                 </span>
                 {%- endif -%}
               </div>
