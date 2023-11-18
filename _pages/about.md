@@ -2,14 +2,12 @@
 layout: about
 title: about
 permalink: /
-subtitle: <a href='#'>Affiliations</a>. Address. Contacts. Moto. Etc.
 
 profile:
   align: right
   image: MEMOJI.png
   image_circular: false # crops the image to make it circular
   more_info: >
-    <p>Network Information Systems Lab</p>
     <p>Undergraduate Research Intern</p>
     <p>Sangmyung Univ.</p>
     <p>Seoul, South Korea 🇰🇷</p>
@@ -20,8 +18,4 @@ selected_papers: false # includes a list of papers marked as "selected={true}"
 social: false # includes social icons at the bottom of the page
 ---
 
-Write your biography here. Tell the world about yourself. Link to your favorite [subreddit](http://reddit.com). You can put a picture in, too. The code is already in, just name your picture `prof_pic.jpg` and put it in the `img/` folder.
-
-Put your address / P.O. box / other info right below your picture. You can also disable any of these elements by editing `profile` property of the YAML header of your `_pages/about.md`. Edit `_bibliography/papers.bib` and Jekyll will render your [publications page](/al-folio/publications/) automatically.
-
-Link to your social media connections, too. This theme is set up to use [Font Awesome icons](http://fortawesome.github.io/Font-Awesome/) and [Academicons](https://jpswalsh.github.io/academicons/), like the ones below. Add your Facebook, Twitter, LinkedIn, Google Scholar, or just disable all of them.
+I am currently a Computer Science undergraduate student at the [Sangmyung University](https://cs.smu.ac.kr/cs/index.do). Since June 2023, I have been working as an undergraduate research intern under [Dr. KyungSeop Shin](https://cs.smu.ac.kr/cs/faculty/faculty.do?mode=view&empNo=10881398&pager.offset=0&pagerLimit=20)'s [Network Information Systems Lab](https://nisl.smu.ac.kr) focusing on the study of **Reinforcement Learning** (RL) and **Bayesian Neural Network** (BNN). The area that I'm currently interested in the most is **Uncertainty Quantification** (UQ).
