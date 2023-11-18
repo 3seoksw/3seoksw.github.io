@@ -173,7 +173,7 @@ collections:
     permalink: /projects/:path/
   paper-reviews:
     output: true
-    permalink: /papers-reviews/:path/
+    permalink: /paper-reviews/:path/
 
 announcements:
   enabled: true
