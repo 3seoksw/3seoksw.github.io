@@ -12,7 +12,7 @@ related_publications:
 
 # Likelihood Function
 
-The likelihood function is the joint probability of the given data (say $x$) viewed as a function.
+The likelihood function is the joint probability of the given data (say $$x$$) viewed as a function.
 
 ### Definition
 
