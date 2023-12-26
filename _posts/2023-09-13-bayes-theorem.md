@@ -34,9 +34,9 @@ $$
 \end{align*}
 $$
 
-- $w$: Prior weights for a neural network
-- $\mathcal{D}$: Data
-- $P(w|\mathcal{D})$: Posterior distribution, a probability distribution of the neural network weights $w$ after observing the data $\mathcal{D}$
-- $P(\mathcal{D}|w)$: Likelihood function, represents how well the neural network with parameters $w$ fits the observed data $\mathcal{D}$
-- $P(w)$: Prior, prior beliefs about the neural network weights before observing the data $\mathcal{D}$
-- $P(y^*|x^*)=\mathbb{E}_{P(w|\mathcal{D})}[P(y^*|x^*, w)]$ At prediction time, the predictive distribution over the target $y^*$ given a test input $x^*$
+- $$w$$: Prior weights for a neural network
+- $$\mathcal{D}$$: Data
+- $$P(w|\mathcal{D})$$: Posterior distribution, a probability distribution of the neural network weights $$w$$ after observing the data $$\mathcal{D}$$
+- $$P(\mathcal{D}|w)$$: Likelihood function, represents how well the neural network with parameters $$w$$ fits the observed data $$\mathcal{D}$$
+- $$P(w)$$: Prior, prior beliefs about the neural network weights before observing the data $$\mathcal{D}$$
+- $$P(y^*|x^*)=\mathbb{E}_{P(w|\mathcal{D})}[P(y^*|x^*, w)]$$ At prediction time, the predictive distribution over the target $$y^*$$ given a test input $$x^*$$
