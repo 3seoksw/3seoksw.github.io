@@ -2,12 +2,12 @@
 layout: post
 title: Bayes' Theorem
 date: 2023-09-13 21:30:00-0400
-description: Bayes Rule: probability of an event based on prior knowledge
+description: Bayes Rule, probability of an event based on prior knowledge
 tags: statistics bayes
 categories: concepts
 giscus_comments: false
 related_posts: false
-related_publications: 
+related_publications:
 ---
 
 # Bayes' Theorem
