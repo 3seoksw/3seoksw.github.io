@@ -58,7 +58,7 @@ $$
 $$
 
 <p align="center">
-    <img src="../assets/img/bnn_network.png" width="400px" title="bnn-network">
+    {% include figure.html path="../assets/img/bnn_network.png" class="img-fluid rounded z-depth-1" zoomable=true %}
 </p>
 
 #### Variational Inference
