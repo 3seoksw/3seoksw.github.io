@@ -10,7 +10,7 @@ related_publications: vanhasselt2015deep
 
 # Double DQN: Super Mario Bros.
 
-This project is built based on the paper regarding <b>Double DQN</b>[[1]](#1).
+[This project](https://github.com/3seoksw/DDQN-mario) is built based on the paper regarding <b>Double DQN</b>[[1]](#1).<br>
 
 ## To Get Started
 
@@ -39,7 +39,7 @@ $$
 \begin{align*}
     \text{State}: &\text{current image frame} (\text{channel} \times \text{height} \times \text{width}) \\
     \text{Action}: &\text{set of actions agent Mario can take} \\
-    & \text{\textit{e.g.}) move forward, jump, \textit{etc.}} \\
+    &\textit{e.g.}) \text{move forward, jump, } \textit{etc.} \\
     \text{Reward}: &\text{distance agent moved} \\
     &\text{coins agent acquired} \\
     &\text{enemies agent killed} \\
