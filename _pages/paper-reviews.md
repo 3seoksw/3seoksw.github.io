@@ -1,6 +1,6 @@
 ---
 layout: page
-title: paper reviews
+title: Paper Reviews
 permalink: /paper-reviews/
 description: A collection of the papers I've reviewed.
 nav: true
@@ -36,10 +36,15 @@ horizontal: false
   {% endfor %}
 
 {%- else -%}
+
 <!-- Display projects without categories -->
-  {%- assign sorted_paper-reviews = site.paper-reviews | sort: "importance" -%}
+
+{%- assign sorted_paper-reviews = site.paper-reviews | sort: "importance" -%}
+
   <!-- Generate cards for each project -->
-  {% if page.horizontal -%}
+
+{% if page.horizontal -%}
+
   <div class="container">
     <div class="row row-cols-2">
     {%- for paper-review in sorted_paper-review -%}
