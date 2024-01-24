@@ -53,7 +53,7 @@ Since states are in the forms of image frames, CNN will be used which consists o
 
 ## Background
 
-There are some similarities between DQN and Double DQN (DDQN) in terms of both taking advantage of using $Q$ values.
+There are some similarities between DQN and Double DQN (DDQN) in terms of both taking advantage of using $$Q$$ values.
 But there is a major difference for the method to update $$Q$$ value.
 For further reference, please see [[1]](#1).
 
