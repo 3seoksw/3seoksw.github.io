@@ -2,15 +2,25 @@
 layout: page
 title: Double DQN implementaion on Super Mario Bros.
 description: DDQN implementaion using Mario (gym) API
-img: assets/img/mario_bros.gif
+img: assets/img/mario/mario_1_1_showcase.gif
 importance: 1
 category: DRL
-related_publications: vanhasselt2015deep
+related_publications: vanhasselt2015deep, pytorch-ddqn, mnih2013playing
 ---
 
 # Double DQN: Super Mario Bros.
 
-[This project](https://github.com/3seoksw/DDQN-mario) is built based on the paper regarding <b>Double DQN</b>[[1]](#1).<br>
+[This project](https://github.com/3seoksw/DDQN-mario) is built based on the paper regarding <b>Double DQN</b>[[1]](#1)
+and official **PyTorch** website [[2]](#2).<br>
+The main motivation and purpose of building this project was to enhance the better understanding of how reinforcement learning works on practice through code.
+Here, the code applies DDQN which is quite similar to DQN [[3]](#3).
+For further information regarding the difference between the two, please see the following: [Background](#background) or [[1]](#1).
+
+## Showcase
+
+<p align="center">
+    {% include figure.html path="../assets/img/mario/mario_1_1_showcase.gif" class="img-fluid rounded z-depth-1" zoomable=true %}
+</p>
 
 ## To Get Started
 
@@ -35,8 +45,16 @@ There are few workarounds but I erased every `truncated` keyword in `time_limit.
 
 ## Problem Justification
 
+Because the project is using several packages, explicit (manual) definition or assignment of
+$$\text{Environment, State, Action, Reward}$$ is not necessary.<br>
+But for the sake of understanding of RL, you might want to see [[3]](#3) which provides detailed explanations on solving Atari games using RL.<br>
+
+The following explains how problem can be justified in a simple manner:
+
 $$
 \begin{align*}
+    \text{Environment}: &\text{the world agent interacts with} \\
+    & \textit{i.e.} \text{) stage, blocks, mushrooms, } \textit{etc.} \\
     \text{State}: &\text{current image frame} (\text{channel} \times \text{height} \times \text{width}) \\
     \text{Action}: &\text{set of actions agent Mario can take} \\
     &\textit{e.g.}) \text{move forward, jump, } \textit{etc.} \\
@@ -49,7 +67,16 @@ $$
 \end{align*}
 $$
 
-Since states are in the forms of image frames, CNN will be used which consists of three convolutional layers paired with ReLU function, flattening layer, densifying the tensor processed, and two fully-connected neural networks. <br>
+Main goal is to agent maximizing its rewards.
+
+Since states are in the forms of image frames, CNN will be used which consists of three convolutional layers paired with ReLU function, flattening layer, densifying the tensor processed, and two fully-connected neural networks.<br>
+Agent will judge the current situation using the state information
+
+Actions can vary (right-only, simple, or complex) according to [nes-py 8.2.1](https://pypi.org/project/nes-py/).
+Agent will choose an action based on the algorithm namely DDQN in order to maximize the reward.
+
+Rewards are the key to solve RL problems. Agent will take actions based on the rewards.
+Here, rewards can be whether the agent reached to final state (flag), the distance agent moved, etc.
 
 ## Background
 
@@ -113,3 +140,13 @@ where $$\theta$$ is parameterizing online network.
 <a id="1" href="https://ojs.aaai.org/index.php/AAAI/article/view/10295">[1]</a>
 H. v. Hasselt, A. Guez, and D. Silver. "Deep Reinforcement Learning with Double Q-learning,"
 <i>Proceedings of the AAAI Conference on Artificial Intelligence, 30(1)</i>, 2016.
+
+<a id="2" href="https://pytorch.org/tutorials/intermediate/mario_rl_tutorial.html">[2]</a>
+Y. Feng, S. Subramanian, H. Wang, and S. Guo. "TRAIN A MARIO-PLAYING RL AGENT,"
+PyTorch, accessed January 27, 2024,
+https://pytorch.org/tutorials/intermediate/mario_rl_tutorial.html.
+
+<a id="3" href="https://arxiv.org/abs/1312.5602">[3]</a>
+V. Mnih, K. Kavukcuoglu, D. Silver, A. Graves, I. Antonoglou, D. Wierstra, and M. Riedmiller.
+"Playing atari with deep reinforcement learning."
+<i>arXiv preprint arXiv:1312.5602</i>, (2013).
