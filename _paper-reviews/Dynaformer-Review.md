@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Dynaformer: A Deep Learning Model for Ageing-aware Battery Discharge Prediction
+title: Dynaformer, A Deep Learning Model for Ageing-aware Battery Discharge Prediction
 description: Transformer-based Battery EoD Prediction Model
 importance: 3
 category: Transformer
@@ -90,9 +90,9 @@ Transformer is all about understanding the context and the hidden meaning behind
     <i>Figure 2.</i>
     Transformer model architecture
     <a href="#2">[2]</a>.
-    (Left) Embedding 
-    (Centre)
-    (Right)
+    (Left) Positional embedding
+    (Centre) Encoder
+    (Right) Decoder
 </p>
 
 ## Model Architecture

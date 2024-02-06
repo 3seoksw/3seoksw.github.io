@@ -5,7 +5,7 @@ permalink: /paper-reviews/
 description: A collection of the papers I've read.
 nav: true
 nav_order: 2
-display_categories: [DRL, BNN, Transformer]
+display_categories: [Transformer, DRL, BNN]
 horizontal: false
 ---
 
