@@ -74,8 +74,6 @@ Let's consider the following sentence.
 We know that <b>she</b> is indicating <b>the dog</b>, not <b>me</b>.
 Transformer is all about understanding the context and the hidden meaning behind the given data.
 
-<img src="../assets/img/dynaformer/fig2-1.png" width="50%">
-
 <div class="row mt-3">
     <div class="col-sm mt-3 mt-md-0">
         {% include figure.html path="../assets/img/dynaformer/fig2-1.png" class="img-fluid rounded z-depth-1" zoomable=true %}
@@ -87,6 +85,12 @@ Transformer is all about understanding the context and the hidden meaning behind
         {% include figure.html path="../assets/img/dynaformer/fig2-3.png" class="img-fluid rounded z-depth-1" zoomable=true %}
     </div>
 </div>
+
+<p align="center">
+    <i>Figure 2.</i>
+    Transformer model architecture
+    <a href="#2">[2]</a>
+</p>
 
 ## Model Architecture
 
