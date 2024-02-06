@@ -1,7 +1,7 @@
 ---
 layout: page
 title: A DRL Approach for Sensor-driven Decision Making and RUL Prediction
-description: frameworks for decision making and RUL prediction are suggested
+description: Frameworks for decision making and RUL prediction are suggested
 importance: 2
 category: DRL
 related_publications: drl-sensor
