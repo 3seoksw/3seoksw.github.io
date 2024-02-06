@@ -2,10 +2,10 @@
 layout: page
 title: Paper Reviews
 permalink: /paper-reviews/
-description: A collection of the papers I've reviewed.
+description: A collection of the papers I've read.
 nav: true
 nav_order: 2
-display_categories: [Transformer, DRL, BNN]
+display_categories: [DRL, BNN, Transformer]
 horizontal: false
 ---
 
