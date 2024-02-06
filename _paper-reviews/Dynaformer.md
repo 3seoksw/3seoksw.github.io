@@ -2,7 +2,7 @@
 layout: page
 title: Dynaformer: A Deep Learning Model for Ageing-aware Battery Discharge Prediction
 description: Transformer-based Battery EoD Prediction Model
-importance: 2
+importance: 3
 category: Transformer
 related_publications: biggio2022dynaformer
 ---
@@ -78,13 +78,13 @@ Transformer is all about understanding the context and the hidden meaning behind
 
 <div class="row mt-3">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="../assets/img/dynaformer/fig2-1.png" class="img-fluid rounded z-depth-1" zoomable=true width="50%" %}
+        {% include figure.html path="../assets/img/dynaformer/fig2-1.png" class="img-fluid rounded z-depth-1" zoomable=true %}
     </div>
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="../assets/img/dynaformer/fig2-2.png" class="img-fluid rounded z-depth-1" zoomable=true width="50%" %}
+        {% include figure.html path="../assets/img/dynaformer/fig2-2.png" class="img-fluid rounded z-depth-1" zoomable=true %}
     </div>
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="../assets/img/dynaformer/fig2-3.png" class="img-fluid rounded z-depth-1" zoomable=true width="50%" %}
+        {% include figure.html path="../assets/img/dynaformer/fig2-3.png" class="img-fluid rounded z-depth-1" zoomable=true %}
     </div>
 </div>
 
