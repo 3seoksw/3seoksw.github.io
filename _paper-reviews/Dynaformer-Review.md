@@ -3,7 +3,7 @@ layout: page
 title: Dynaformer: A Deep Learning Model for Ageing-aware Battery Discharge Prediction
 description: Transformer-based Battery EoD Prediction Model
 importance: 3
-category: DRL 
+category: Transformer
 related_publications: biggio2022dynaformer
 ---
 
@@ -90,7 +90,7 @@ Transformer is all about understanding the context and the hidden meaning behind
     <i>Figure 2.</i>
     Transformer model architecture
     <a href="#2">[2]</a>.
-    (Left)
+    (Left) Embedding 
     (Centre)
     (Right)
 </p>
