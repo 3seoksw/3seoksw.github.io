@@ -347,7 +347,7 @@ And for the final evaluation, real data will be used to see the performance of t
 </p>
 
 <div align="center">
-    {% include figure.html path="../assets/img/dynaformer/fig11.png" class="img-fluid rounded z-depth-1" zoomable=true width="75%" %}
+    {% include figure.html path="../assets/img/dynaformer/fig11.jpg" class="img-fluid rounded z-depth-1" zoomable=true width="75%" %}
 </div>
 
 <p align="center">
@@ -359,7 +359,7 @@ And for the final evaluation, real data will be used to see the performance of t
 #### Implicit Ageing Inference
 
 <div align="center">
-    {% include figure.html path="../assets/img/dynaformer/fig11.jpg" class="img-fluid rounded z-depth-1" zoomable=true width="75%" %}
+    {% include figure.html path="../assets/img/dynaformer/fig12.png" class="img-fluid rounded z-depth-1" zoomable=true width="75%" %}
 </div>
 
 <p align="center">
