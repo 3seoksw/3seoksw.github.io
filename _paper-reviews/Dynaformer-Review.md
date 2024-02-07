@@ -95,13 +95,79 @@ Transformer is all about understanding the context and the hidden meaning behind
     (Right) Decoder
 </p>
 
+Transformer is consists of three major parts: positional embedding, encoder and decoder. The above _Figure 2._ represents the mentioned three parts.<br>
+Positional embedding is to transfer the given data into numerical vectors. By doing so, positional information can be embedded within the vectors.<br>
+
+Encoder's job is to obtain **query**, **key** and **value** -- $$(Q, K, V)$$ -- given some positional embedding.
+The **query** is a vector which contains given specific data such as a word itself when a sentence is given.
+The **key** is a value which can specify the **query**.
+And lastly, the **value** represents the **query**'s hidden meaning.
+It can contain context or positional information.
+Here, **self-attention** comes in. Simply saying, self-attention cells find the correlations among the data by using $$(Q, K, V)$$.<br>
+
+Decoder's job is very similiar with the encoder but it differs with the main purpose.
+While the encoder's main purpose is to find the correlations among input data,
+the decoder's main purpose is to find the correlations between the input data and ouput data.<br>
+To simplify, let's bring the classic translation example.
+Say I want to translate some English sentences into Korean sentences.
+Then the input of the encoder is the English sentences and the input of the decoder is the the Korean sentences, in other words, data that we target.
+So the encoder mainly interprets and finds the meaning, hidden information, and correlations from the English sentences,
+and the decoder focuses on finding the correlations between the English sentences and the Korean sentences, when training.<br>
+Back to the point, the decoder also obtains **query**, **key**, and **value**.
+However, in the decoder, **key** and **value** from the encoder and **query** from decoder will only be used.
+By using $$(K, V)$$ from the encoder and $$(Q)$$ from the decoder, the decoder is able to apply self-attention mechanism to find the correlations between the data we want to interpret and the data we aims.
+
 ## Model Architecture
+
+{% include figure.html path="../assets/img/dynaformer/fig2-3.png" class="img-fluid rounded z-depth-1" zoomable=true %}
+
+<p align="center">
+    <i>Figure 3.</i>
+    Representation of the components of Dynaformer
+    <a href="#1">[1]</a>
+</p>
+
+The proposed Dynaformer is basically the same with the Transformer model but with the difference of the data type.
+Since the paper is to predict EoD, input data types are current and voltage curves.
+Note that the inputs of the encoder are current and voltage curves and the inputs of the decoder are the rest of the current curves and the output of the encoder,
+then eventually outputs full discharge voltage curves.
+
+<p align="center">
+    {% include figure.html path="../assets/img/dynaformer/fig4.jpg" class="img-fluid rounded z-depth-1" zoomable=true width="75%" %}
+    <br>
+    <i>Figure 4.</i>
+    Dynaformer - model architecture
+    <a href="#1">[1]</a>
+</p>
+
+_Figure 3._ and _Figure 4._ are the same model architecture, but for the sake of easy understanding of the Dynaformer using the Transformer-style architecture representation, _Figure 3._ can be redrawn as _Figure 4._.
 
 ### Embedding
 
+<p align="center">
+    {% include figure.html path="../assets/img/dynaformer/fig4-1.jpg" class="img-fluid rounded z-depth-1" zoomable=true width="75%" %}
+    <br>
+    <i>Figure 4-1.</i>
+    Dynaformer - Embedding
+</p>
+
 ### Encoder
 
+<p align="center">
+    {% include figure.html path="../assets/img/dynaformer/fig4-2.jpg" class="img-fluid rounded z-depth-1" zoomable=true width="75%" %}
+    <br>
+    <i>Figure 4-1.</i>
+    Dynaformer - Embedding
+</p>
+
 ### Decoder
+
+<p align="center">
+    {% include figure.html path="../assets/img/dynaformer/fig4-3.jpg" class="img-fluid rounded z-depth-1" zoomable=true width="75%" %}
+    <br>
+    <i>Figure 4-1.</i>
+    Dynaformer - Embedding
+</p>
 
 ## Results
 
