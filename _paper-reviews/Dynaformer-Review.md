@@ -169,9 +169,38 @@ _Figure 3._ and _Figure 4._ are the same model architecture, but for the sake of
 
 ### Embedding
 
+<div align="center">
+    {% include figure.html path="../assets/img/dynaformer/fig5.jpg" class="img-fluid rounded z-depth-1" zoomable=true width="75%" %}
+</div>
+
+<p align="center">
+    <i>Figure 5.</i>
+    Dynaformer - (Context) Embedding
+    <a href="#1">[1]</a>
+</p>
+
 ### Encoder
 
+<div align="center">
+    {% include figure.html path="../assets/img/dynaformer/fig6.jpg" class="img-fluid rounded z-depth-1" zoomable=true width="75%" %}
+</div>
+
+<p align="center">
+    <i>Figure 6.</i>
+    Dynaformer - Encoder
+</p>
+
 ### Decoder
+
+<div align="center">
+    {% include figure.html path="../assets/img/dynaformer/fig7.jpg" class="img-fluid rounded z-depth-1" zoomable=true width="75%" %}
+</div>
+
+<p align="center">
+    <i>Figure 7.</i>
+    Dynaformer - Decoder
+    <a href="#1">[1]</a>
+</p>
 
 ## Results
 
