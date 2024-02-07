@@ -132,13 +132,13 @@ Since the paper is to predict EoD, input data types are current and voltage curv
 Note that the inputs of the encoder are current and voltage curves and the inputs of the decoder are the rest of the current curves and the output of the encoder,
 then eventually outputs full discharge voltage curves.
 
-<p align="center">
+<div align="center">
     {% include figure.html path="../assets/img/dynaformer/fig4.jpg" class="img-fluid rounded z-depth-1" zoomable=true width="75%" %}
     <br>
     <i>Figure 4.</i>
     Dynaformer - model architecture
     <a href="#1">[1]</a>
-</p>
+</div>
 
 _Figure 3._ and _Figure 4._ are the same model architecture, but for the sake of easy understanding of the Dynaformer using the Transformer-style architecture representation, _Figure 3._ can be redrawn as _Figure 4._.
 
