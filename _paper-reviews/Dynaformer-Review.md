@@ -119,13 +119,13 @@ By using $$(K, V)$$ from the encoder and $$(Q)$$ from the decoder, the decoder i
 
 ## Model Architecture
 
-{% include figure.html path="../assets/img/dynaformer/fig2-3.png" class="img-fluid rounded z-depth-1" zoomable=true %}
-
-<p align="center">
+<div align="center">
+    {% include figure.html path="../assets/img/dynaformer/fig2-3.png" class="img-fluid rounded z-depth-1" zoomable=true width="75%" %}
+    <br>
     <i>Figure 3.</i>
     Representation of the components of Dynaformer
     <a href="#1">[1]</a>
-</p>
+</div>
 
 The proposed Dynaformer is basically the same with the Transformer model but with the difference of the data type.
 Since the paper is to predict EoD, input data types are current and voltage curves.
@@ -144,30 +144,30 @@ _Figure 3._ and _Figure 4._ are the same model architecture, but for the sake of
 
 ### Embedding
 
-<p align="center">
+<div align="center">
     {% include figure.html path="../assets/img/dynaformer/fig4-1.jpg" class="img-fluid rounded z-depth-1" zoomable=true width="75%" %}
     <br>
     <i>Figure 4-1.</i>
     Dynaformer - Embedding
-</p>
+</div>
 
 ### Encoder
 
-<p align="center">
+<div align="center">
     {% include figure.html path="../assets/img/dynaformer/fig4-2.jpg" class="img-fluid rounded z-depth-1" zoomable=true width="75%" %}
     <br>
-    <i>Figure 4-1.</i>
-    Dynaformer - Embedding
-</p>
+    <i>Figure 4-2.</i>
+    Dynaformer - Encoder
+</div>
 
 ### Decoder
 
-<p align="center">
+<div align="center">
     {% include figure.html path="../assets/img/dynaformer/fig4-3.jpg" class="img-fluid rounded z-depth-1" zoomable=true width="75%" %}
     <br>
-    <i>Figure 4-1.</i>
-    Dynaformer - Embedding
-</p>
+    <i>Figure 4-3.</i>
+    Dynaformer - Decoder
+</div>
 
 ## Results
 
