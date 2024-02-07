@@ -121,11 +121,13 @@ By using $$(K, V)$$ from the encoder and $$(Q)$$ from the decoder, the decoder i
 
 <div align="center">
     {% include figure.html path="../assets/img/dynaformer/fig2-3.png" class="img-fluid rounded z-depth-1" zoomable=true width="75%" %}
-    <br>
+</div>
+
+<p align="center">
     <i>Figure 3.</i>
     Representation of the components of Dynaformer
     <a href="#1">[1]</a>
-</div>
+</p>
 
 The proposed Dynaformer is basically the same with the Transformer model but with the difference of the data type.
 Since the paper is to predict EoD, input data types are current and voltage curves.
@@ -134,11 +136,13 @@ then eventually outputs full discharge voltage curves.
 
 <div align="center">
     {% include figure.html path="../assets/img/dynaformer/fig4.jpg" class="img-fluid rounded z-depth-1" zoomable=true width="75%" %}
-    <br>
+</div>
+
+<p align="center">
     <i>Figure 4.</i>
     Dynaformer - model architecture
     <a href="#1">[1]</a>
-</div>
+</p>
 
 _Figure 3._ and _Figure 4._ are the same model architecture, but for the sake of easy understanding of the Dynaformer using the Transformer-style architecture representation, _Figure 3._ can be redrawn as _Figure 4._.
 
@@ -146,28 +150,34 @@ _Figure 3._ and _Figure 4._ are the same model architecture, but for the sake of
 
 <div align="center">
     {% include figure.html path="../assets/img/dynaformer/fig4-1.jpg" class="img-fluid rounded z-depth-1" zoomable=true width="75%" %}
-    <br>
+</div>
+
+<p align="center">
     <i>Figure 4-1.</i>
     Dynaformer - Embedding
-</div>
+</p>
 
 ### Encoder
 
 <div align="center">
     {% include figure.html path="../assets/img/dynaformer/fig4-2.jpg" class="img-fluid rounded z-depth-1" zoomable=true width="75%" %}
-    <br>
+</div>
+
+<p align="center">
     <i>Figure 4-2.</i>
     Dynaformer - Encoder
-</div>
+</p>
 
 ### Decoder
 
 <div align="center">
     {% include figure.html path="../assets/img/dynaformer/fig4-3.jpg" class="img-fluid rounded z-depth-1" zoomable=true width="75%" %}
-    <br>
+</div>
+
+<p align="center">
     <i>Figure 4-3.</i>
     Dynaformer - Decoder
-</div>
+</p>
 
 ## Results
 
