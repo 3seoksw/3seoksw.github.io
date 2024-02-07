@@ -146,38 +146,32 @@ then eventually outputs full discharge voltage curves.
 
 _Figure 3._ and _Figure 4._ are the same model architecture, but for the sake of easy understanding of the Dynaformer using the Transformer-style architecture representation, _Figure 3._ can be redrawn as _Figure 4._.
 
-### Embedding
-
-<div align="center">
-    {% include figure.html path="../assets/img/dynaformer/fig4-1.jpg" class="img-fluid rounded z-depth-1" zoomable=true width="75%" %}
+<div class="row mt-3">
+    <div class="col-sm mt-3 mt-md-0">
+        {% include figure.html path="../assets/img/dynaformer/fig4-1.jpg" class="img-fluid rounded z-depth-1" zoomable=true %}
+    </div>
+    <div class="col-sm mt-3 mt-md-0">
+        {% include figure.html path="../assets/img/dynaformer/fig4-2.jpg" class="img-fluid rounded z-depth-1" zoomable=true %}
+    </div>
+    <div class="col-sm mt-3 mt-md-0">
+        {% include figure.html path="../assets/img/dynaformer/fig4-3.jpg" class="img-fluid rounded z-depth-1" zoomable=true %}
+    </div>
 </div>
 
 <p align="center">
-    <i>Figure 4-1.</i>
-    Dynaformer - Embedding
+    <i>Figure 4-1, 4-2, 4-3.</i>
+    Dynaformer - detailed model architecture
+    <a href="#1">[1]</a>.
+    (Left) Positional embedding
+    (Centre) Encoder
+    (Right) Decoder
 </p>
+
+### Embedding
 
 ### Encoder
 
-<div align="center">
-    {% include figure.html path="../assets/img/dynaformer/fig4-2.jpg" class="img-fluid rounded z-depth-1" zoomable=true width="75%" %}
-</div>
-
-<p align="center">
-    <i>Figure 4-2.</i>
-    Dynaformer - Encoder
-</p>
-
 ### Decoder
-
-<div align="center">
-    {% include figure.html path="../assets/img/dynaformer/fig4-3.jpg" class="img-fluid rounded z-depth-1" zoomable=true width="75%" %}
-</div>
-
-<p align="center">
-    <i>Figure 4-3.</i>
-    Dynaformer - Decoder
-</p>
 
 ## Results
 
