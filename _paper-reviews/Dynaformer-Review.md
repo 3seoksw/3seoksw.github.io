@@ -145,6 +145,7 @@ then eventually outputs full discharge voltage curves.
 </p>
 
 _Figure 3._ and _Figure 4._ are the same model architecture, but for the sake of easy understanding of the Dynaformer using the Transformer-style architecture representation, _Figure 3._ can be redrawn as _Figure 4._.
+The following figures specify each part from the Dynaformer.
 
 <div class="row mt-3">
     <div class="col-sm mt-3 mt-md-0">
@@ -179,6 +180,11 @@ _Figure 3._ and _Figure 4._ are the same model architecture, but for the sake of
     <a href="#1">[1]</a>
 </p>
 
+Here, Dynaformer gets information regarding the battery's profiles,
+which are current profile (curve) and voltage profile (curve).
+While (positional) embedding, nothing special happens but reshapes the data into $$(Q, K, V)$$ including positional, context information.
+The $$Q$$ represents current and voltage curves, the $$K$$ serves as a specifier to find the $$Q$$, and the $$V$$ contains positional information such as time for the matching $$Q$$.
+
 ### Encoder
 
 <div align="center">
@@ -189,6 +195,10 @@ _Figure 3._ and _Figure 4._ are the same model architecture, but for the sake of
     <i>Figure 6.</i>
     Dynaformer - Encoder
 </p>
+
+The encoder's inputs are $$(Q, K, V)$$ from the embedding.
+Here, it's main role is to find the correlations between the input current, voltage, and time which will eventually extracts degradation information.
+In order to find such information, multi-head self-attention cells are used. For further information regarding self-attention mechanism, please see [[2]](#2).
 
 ### Decoder
 
@@ -202,9 +212,32 @@ _Figure 3._ and _Figure 4._ are the same model architecture, but for the sake of
     <a href="#1">[1]</a>
 </p>
 
+The decoder predicts EoD as a final ouput, given the ageing inference from the encoder's ouput and the rest of the current curves which are from the decoder's input.
+Using the ageing inference, $$(K, V)$$, and the rest of the current curves, $$Q$$,
+the Dynaformer is now able to predict the voltage curves corresponding to the current curves from the input of the decoder exploiting the ageing inference information from the encoder.
+
 ## Results
 
 ### Experimental Setup
+
+Just like I've mentioned from the [Background - Battery](#battery) section, there are two main limitations when using data-driven method for predicting EoD and ageing inference:
+requires large labeled dataset and requires long time series dataset which is inefficient for training.<br>
+The proposed Dynaformer solves the problems originally had when using data-driven method.
+
+First, the Dynaformer mitigated the problem of lack of dataset for training by using the following:
+[[3]](#3) and [[4]](#4).
+[[3]](#3) is a NASA Prognostics Model library which helps creating a simulated training dataset.
+The paper experiments the model by changing two degradation parameters, $$q_max$$ and $$R_0$$, to observe the performance change when the parameters changed.
+Also [[4]](#4) is a NASA real-world Dataset for batteries and is used as a input for the simulator, [[3]](#3).<br>
+However, there may be a simulation-to-real gap (sim2real gap) since the training dataset is a simulation-based data.
+To mitigate such concern, the paper applied transfer learning. As [[5]](#5) suggests, training the model with simulated data then using a limited amount of real data to adapt the model can reduce the model's bias towards simulated data.
+
+Second, the Dynaformer gets the **tokenized** input.
+In other words, instead of feeding a full length of the curves,
+the Dynaformer only accepts a small sized curves in sequence.
+Please see _Figure 3._ for better understanding of the concept of **token**.
+Training the model with long time series data is in fact inefficient.
+However, using the technique from [[6]](#6) solves such problem.
 
 ### Performance Evaluation
 
