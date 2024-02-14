@@ -1,6 +1,7 @@
 ---
 layout: page
 title: Double DQN implementaion on Super Mario Bros.
+date: 2024-01-31 20:00:00-0400
 description: DDQN implementaion using Mario (gym) API
 img: assets/img/mario/mario_1_1_showcase.gif
 importance: 1

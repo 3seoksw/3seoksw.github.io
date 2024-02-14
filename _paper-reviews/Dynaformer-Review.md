@@ -1,6 +1,7 @@
 ---
 layout: page
 title: Dynaformer, A Deep Learning Model for Ageing-aware Battery Discharge Prediction
+date: 2024-02-07 20:00:00-0400
 description: Transformer-based Battery EoD Prediction Model
 importance: 3
 category: Transformer
