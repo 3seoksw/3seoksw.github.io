@@ -17,7 +17,7 @@ The **Cross-Entropy** between two probability distributions $$p$$ and $$q$$ meas
 The **Cross-entropy** of the distribution $$q$$ relative to a distribution $$p$$ over a given set is defined as follows:
 
 $$
-H(p, q) = -\mathbb{E}\_p[\log q]
+H(p, q) = -\mathbb{E}_p[\log q]
 $$
 
 where $$\mathbb{E}_p[\cdot]$$ is the expected value operator with respect to the distribution $$p$$.
