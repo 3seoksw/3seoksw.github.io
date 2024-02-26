@@ -36,5 +36,5 @@ $$
 For continuous probability distributions:
 
 $$
-H(p, q) = -\int*{\mathcal{X}}P(x)\log{Q(x)}dr(x)
+H(p, q) = -\int_{\mathcal{X}}P(x)\log{Q(x)}dr(x)
 $$
