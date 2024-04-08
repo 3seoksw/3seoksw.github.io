@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Non-Orthogonal Multiple Access (NOMA) - Background
-date: 2024-04-08 21:30:00-0400
+date: 2024-04-07 21:30:00-0400
 description: Basic Theoretical Background of NOMA system
 tags: communications
 categories: background concepts
