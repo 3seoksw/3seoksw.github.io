@@ -114,7 +114,7 @@ Let $$A^k_n=2^{\frac{(R^k_n)_{min}}{B_c}}$$ and assume $$A^k_2\geq 2.$$
 > 2^{\frac{(R^k_n)_{min}}{B_c}}=P'=A^k_n.
 > $$
 >
-> MSR is an objective function to ensure the total throughput to be maximized; you can easily consider the MSR metric when the $\alpha$-fairness function is in the condition of $\alpha=1$.
+> MSR is an objective function to ensure the total throughput to be maximized; you can easily consider the MSR metric when the $$\alpha$$-fairness function is in the condition of $$\alpha=1$$.
 
 For MSR, the power allocation problem is formulated as
 
