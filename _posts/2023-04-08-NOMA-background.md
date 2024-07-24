@@ -16,7 +16,7 @@ related_publications: Zhu_2017
 
 - $$n$$th user
 - $$k$$th channel
-- $$N_k$$: total number of users using $k$th channel
+- $$N_k$$: total number of users using $$k$$th channel
 - $$z^k_n$$: additive white Gaussian noise (AWGN)
 - $$B_{total}$$: total bandwidth
 - $$K$$: total number of channels
