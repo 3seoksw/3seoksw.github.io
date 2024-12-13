@@ -52,9 +52,10 @@
       "endDate": "2024-08-09"
     }
   ],
-  "honours and awards": [
+  "awards": [
     {
       "title": "Academic Scholarships for Computer Science",
+      "awarder": "Sangmyung University",
       "date": ["2019", "2022"]
     },
     {
