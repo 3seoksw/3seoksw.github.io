@@ -1,12 +1,12 @@
 {
   "basics": {
     "name": "WooSeok Kim",
-    "label": "Undergraduate Research Intern",
+    "title": "Undergraduate Research Intern",
     "image": "",
     "email": "3suksw@gmail.com",
     "phone": "",
     "url": "",
-    "summary": "A German-born theoretical physicist, widely ranked among the greatest and most influential scientists of all time",
+    "summary": "",
     "location": {
       "address": "2712 Broadway St",
       "postalCode": "CA 94115",
@@ -42,8 +42,7 @@
       "studyType": "BS",
       "startDate": "2019-03-01",
       "endDate": "2025-02-01",
-      "score": "",
-      "courses": [""]
+      "score": ""
     },
     {
       "institution": "San Jose State University",
@@ -53,12 +52,16 @@
       "endDate": "2024-08-09"
     }
   ],
-  "awards": [
+  "honours and awards": [
     {
-      "title": "Nobel Prize in Physics",
-      "date": "1921-11-01",
-      "awarder": "Royal Swedish Academy of Sciences",
-      "summary": "The Nobel Prizes are five separate prizes that, according to Alfred Nobel's will of 1895, are awarded to 'those who, during the preceding year, have conferred the greatest benefit to humankind.'"
+      "title": "Academic Scholarships for Computer Science",
+      "date": ["2019", "2022"]
+    },
+    {
+      "title": "Outstanding Program Performance",
+      "date": "2024-08-2",
+      "awarder": "San Jose State University",
+      "summary": ""
     }
   ],
   "certificates": [],
