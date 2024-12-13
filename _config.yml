@@ -173,6 +173,9 @@ collections:
   paper-reviews:
     output: true
     permalink: /paper-reviews/:path/
+  cv:
+    output: true
+    permalink: /cv/:path/
 
 announcements:
   enabled: true
