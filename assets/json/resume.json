@@ -24,13 +24,10 @@
   },
   "work": [
     {
-      "name": "",
-      "position": "",
-      "url": "",
-      "startDate": "",
-      "endDate": "",
-      "summary": "",
-      "highlights": [""]
+      "name": "Optimal Power Allocation and Sub-optimal Channel Assignment for Downlink NOMA System Using Deep Reinforcement Learning",
+      "url": "https://github.com/3seoksw/Downlink-NOMA-with-RL",
+      "date": "2024-11-11",
+      "summary": "First-author journal paper published in a SCOPUS-indexed journal, JKICS (The Journal of Korean Institute of Communication and Information Sciences)"
     }
   ],
   "volunteer": [],
@@ -56,12 +53,45 @@
     {
       "title": "Academic Scholarships for Computer Science",
       "awarder": "Sangmyung University; South Korea, Seoul",
-      "date": "2019, 2022, 2023, 2024"
+      "date": "2019"
+    },
+    {
+      "title": "Academic Scholarships for Computer Science",
+      "awarder": "Sangmyung University; South Korea, Seoul",
+      "date": "2022"
+    },
+    {
+      "title": "Academic Scholarships for Computer Science",
+      "awarder": "Sangmyung University; South Korea, Seoul",
+      "date": "2023"
+    },
+    {
+      "title": "Academic Scholarships for Computer Science",
+      "awarder": "Sangmyung University; South Korea, Seoul",
+      "date": "2024"
     },
     {
       "title": "Outstanding Program Performance",
       "date": "2024-08-2",
       "awarder": "San Jose State University",
+      "summary": ""
+    },
+    {
+      "title": "Entrepreneurship Award",
+      "date": "2024-08-2",
+      "awarder": "San Jose State University",
+      "summary": ""
+    },
+    {
+      "title": "Outstanding Graduation Project Exhibition Award",
+      "date": "2024-11-29",
+      "awarder": "Sangmyung University",
+      "summary": ""
+    },
+    {
+      "title": "Fourth Prize in Capstone Design Competition",
+      "date": "2024-12-10",
+      "awarder": "Sangmyung University",
       "summary": ""
     }
   ],
