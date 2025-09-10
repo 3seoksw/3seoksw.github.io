@@ -2,7 +2,7 @@
 layout: page
 title: Projects
 permalink: /projects/
-description: you can find the project in my github repo
+description: You can find the project in my github repo
 nav: true
 nav_order: 2
 display_categories: [DRL]

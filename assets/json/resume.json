@@ -1,18 +1,18 @@
 {
   "basics": {
     "name": "WooSeok Kim",
-    "title": "Undergraduate Research Intern",
+    "title": "Master's Student",
     "image": "",
-    "email": "3suksw@gmail.com",
+    "email": "wooseokkim@cmail.carleton.ca",
     "phone": "",
     "url": "",
     "summary": "",
     "location": {
-      "address": "103-404, 205, Baekbeom-ro",
-      "postalCode": "04194",
-      "city": "Seoul",
-      "countryCode": "KOR",
-      "region": "Mapo-gu"
+      "address": "5422 Herzberg Laboratories, Carleton University 1125 Colonel By Drive",
+      "postalCode": "K1S 5B6",
+      "city": "Ottawa",
+      "countryCode": "CAN",
+      "region": "Ontario"
     },
     "profiles": [
       {
@@ -34,12 +34,12 @@
   "volunteer": [],
   "education": [
     {
-      "institution": "Sangmyung University",
+      "institution": "Carleton University",
       "url": "",
-      "area": "Computer Science",
-      "studyType": "BS",
-      "startDate": "2019-03-01",
-      "endDate": "2025-02-01",
+      "area": "Computer Science (Data Science Specialization)",
+      "studyType": "MS",
+      "startDate": "2025-09-03",
+      "endDate": "2027-08-31",
       "score": ""
     },
     {
@@ -48,6 +48,15 @@
       "studyType": "Certificate of Achievement",
       "startDate": "2024-07-15",
       "endDate": "2024-08-09"
+    },
+    {
+      "institution": "Sangmyung University",
+      "url": "",
+      "area": "Computer Science",
+      "studyType": "BS",
+      "startDate": "2019-03-01",
+      "endDate": "2025-02-01",
+      "score": "3.93 / 4.0"
     }
   ],
   "awards": [
