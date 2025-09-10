@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Non-Orthogonal Multiple Access (NOMA) - Background
-date: 2024-04-07 21:30:00-0400
-description: Basic Theoretical Background of NOMA system
+title: Downlink Non-Orthogonal Multiple Access (NOMA)
+date: 2025-09-10
+description: Basic Theoretical Background of Downlink NOMA system
 tags: communications
 categories: background
 giscus_comments: false
@@ -10,7 +10,64 @@ related_posts: false
 related_publications: Zhu_2017
 ---
 
-# Non-Orthogonal Multiple Access (NOMA) - Background
+## Background of Downlink Networking Systems
+
+In a downlink networking system, the base station (BS) is the one who manages and allocates resources to users.
+These resources typically include frequency bands, transmission power, time slots, and other related parameters.
+So a key aspect for BS to consider is efficient way of utilizing networking resources.
+In other words, since networking resources are limited, it is important to manage these resources efficiently to ensure high throughput data transmission.
+
+While there are multiple networking techniques to handle resources, in this page we'll be briefly discussing the **Non-Orthogonal Multiple Access (NOMA)**.
+And it is essential to know what **Orthogonal Multiple Access (OMA)** is.
+
+### Orthogonal Multiple Access (OMA)
+
+OMA is a wireless communication technique where the communication resources are allocated orthogonally to users.
+What _"orthogonal"_ resource allocation means is that resources such as frequency, power, or time are assigned exclusively to users, in order to prevent interference between the users.
+
+<div class="center">
+    {% include figure.html path="../assets/img/NOMA/OMA.png" class="img-fluid rounded z-depth-1" zoomable=true width="75%" %}
+</div>
+
+<p align="center">
+    <i>Figure 1.</i>
+    OMA Basic
+</p>
+
+### Non-Orthogonal Multiple Access (NOMA)
+
+And the **Non-Orthogonal Multiple Access (NOMA)** is a more advanced which enhances spectral efficiency.
+It allows multiple users to share the same frequency band and time slots simultaneously.
+The key difference between NOMA and OMA lies here: instead of separating users orthogonally, NOMA differentiates users in power level.
+It assigns different power to users based on their channel condition, such as distance between user and BS or noise ratio.
+
+Let’s take a look at the following example, shown in _Figure 2_.
+
+<div class="center">
+    {% include figure.html path="../assets/img/NOMA/NOMA.png" class="img-fluid rounded z-depth-1" zoomable=true width="75%" %}
+</div>
+
+<p align="center">
+    <i>Figure 2.</i>
+    NOMA Basic
+</p>
+
+Suppose there are two users, _User 1_ and _User 2_.
+The distance between the BS and the users differs, such that _User 1_ is farther while _User 2_ is closer.
+
+Since _User 1_ is farther from the base station than _User 2_, it is likely that _User 1_'s signal will be more affected by noise.
+Due to this, the receiver may not be able to successfully decode User 1's data.
+Therefore, the BS's job is to assign more transmission power to _User 1_ than to _User 2_.
+This power allocation ensures successful transmission of weaker users' data, such as _User 1_'s, even under poor channel conditions.
+
+From the weaker user’s perspective, in this case _User 1_ the decoding process is quite simple.
+Since _User 1_'s signal dominates, in terms of power, the received data can be directly decoded by treating _User 2_'s lower-power signal as noise.
+
+On the other hand, for stronger users, _User 2_, the receiver cannot tell the difference between the users within the same frequency band.
+o enable the stronger user's receiver to distinguish between signals between _User 1_ and _User 2_,
+**Successive Interference Cancellation (SIC)** is employed, which works by leveraging the difference in received power levels.
+What SIC essentially does is subtracting the weaker user’s signal from the received data.
+After cancellation, the receiver can decode its own signal.
 
 ## Basic Notations
 
