@@ -61,24 +61,22 @@
   ],
   "awards": [
     {
-      "title": "Academic Scholarships for Computer Science",
-      "awarder": "Sangmyung University; South Korea, Seoul",
-      "date": "2019"
+      "title": "Software Talent Scholarship",
+      "date": "2024-12-17",
+      "awarder": "Sangmyung University",
+      "summary": ""
     },
     {
-      "title": "Academic Scholarships for Computer Science",
-      "awarder": "Sangmyung University; South Korea, Seoul",
-      "date": "2022"
+      "title": "Fourth Prize in Capstone Design Competition",
+      "date": "2024-12-10",
+      "awarder": "Sangmyung University",
+      "summary": ""
     },
     {
-      "title": "Academic Scholarships for Computer Science",
-      "awarder": "Sangmyung University; South Korea, Seoul",
-      "date": "2023"
-    },
-    {
-      "title": "Academic Scholarships for Computer Science",
-      "awarder": "Sangmyung University; South Korea, Seoul",
-      "date": "2024"
+      "title": "Outstanding Graduation Project Exhibition Award",
+      "date": "2024-11-29",
+      "awarder": "Sangmyung University",
+      "summary": ""
     },
     {
       "title": "Outstanding Program Performance",
@@ -93,22 +91,24 @@
       "summary": ""
     },
     {
-      "title": "Outstanding Graduation Project Exhibition Award",
-      "date": "2024-11-29",
-      "awarder": "Sangmyung University",
-      "summary": ""
+      "title": "Academic Scholarships for Computer Science",
+      "awarder": "Sangmyung University; South Korea, Seoul",
+      "date": "2024"
     },
     {
-      "title": "Fourth Prize in Capstone Design Competition",
-      "date": "2024-12-10",
-      "awarder": "Sangmyung University",
-      "summary": ""
+      "title": "Academic Scholarships for Computer Science",
+      "awarder": "Sangmyung University; South Korea, Seoul",
+      "date": "2023"
     },
     {
-      "title": "Software Talent Scholarship",
-      "date": "2024-12-17",
-      "awarder": "Sangmyung University",
-      "summary": ""
+      "title": "Academic Scholarships for Computer Science",
+      "awarder": "Sangmyung University; South Korea, Seoul",
+      "date": "2022"
+    },
+    {
+      "title": "Academic Scholarships for Computer Science",
+      "awarder": "Sangmyung University; South Korea, Seoul",
+      "date": "2019"
     }
   ],
   "certificates": [],
