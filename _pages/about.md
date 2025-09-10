@@ -10,7 +10,7 @@ profile:
   more_info: >
     <p>Master's Student</p>
     <p>Carleton University</p>
-    <p>Ottawa, Canada 🇨🇦/p>
+    <p>Ottawa, Canada 🇨🇦</p>
 
 news: false # includes a list of news items
 latest_posts: true # includes a list of the newest posts
