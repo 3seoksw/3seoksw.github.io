@@ -41,7 +41,9 @@ As the eseential of the project is using NOMA technique, we first need to justif
 Simply put, NOMA can be divided into two key subproblems: channel assignment and power allocation.
 While serveral works have proposed to tackle these problems, there exists an approach of the optimization of power allocation known as joint resource allocation (JRA) method[[1]].
 
-{% include figure.html path="../assets/img/NOMA/system_model.png" class="img-fluid rounded z-depth-1" zoomable=true %}
+<div align="center">
+    {% include figure.html path="../assets/img/NOMA/system_model.png" class="img-fluid rounded z-depth-1" zoomable=true %}
+</div>
 
 <p align="center">
     <i>Figure 1.</i>
