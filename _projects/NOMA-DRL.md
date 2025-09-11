@@ -6,7 +6,7 @@ description: Application of custom REINFORCE algorithm to downlink NOMA system
 img: assets/img/NOMA/NOMA_paper_preview.png
 importance: 1
 category: DRL
-related_publications:
+related_publications: JRA-DRL
 ---
 
 [This research](https://github.com/3seoksw/Downlink-NOMA-with-RL) is published in [The Journal of Korean Institute of Communication and Information Scienes (JKICS)](https://journal.kics.or.kr/) in March 2025.
