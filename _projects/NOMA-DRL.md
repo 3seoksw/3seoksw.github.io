@@ -5,7 +5,7 @@ date: 2025-01-05
 description: Application of custom REINFORCE algorithm to downlink NOMA system
 img: assets/img/NOMA/NOMA_paper_preview.png
 importance: 1
-category: DRL, Communication
+category: DRL
 related_publications:
 ---
 
@@ -13,8 +13,6 @@ related_publications:
 If you're interested, please check out the [paper](https://journal.kics.or.kr/digital-library/102248).
 
 ---
-
-# Downlink NOMA System with Deep Reinforcement Learning
 
 ## Brief Introduction to The Project
 
