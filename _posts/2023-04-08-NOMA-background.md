@@ -44,7 +44,7 @@ It assigns different power to users based on their channel condition, such as di
 Let’s take a look at the following example, shown in _Figure 2_.
 
 <div class="center">
-    {% include figure.html path="../assets/img/NOMA/NOMA.jpg" class="img-fluid rounded z-depth-1" zoomable=true width="75%" %}
+    {% include figure.html path="../assets/img/NOMA/NOMA.jpg" class="img-fluid rounded z-depth-1" zoomable=true width="75%" margin=auto %}
 </div>
 
 <p align="center">
