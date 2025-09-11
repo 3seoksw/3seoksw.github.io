@@ -26,7 +26,7 @@ OMA is a wireless communication technique where the communication resources are 
 What _"orthogonal"_ resource allocation means is that resources such as frequency, power, or time are assigned exclusively to users, in order to prevent interference between the users.
 
 <div class="center">
-    {% include figure.html path="../assets/img/NOMA/OMA.png" class="img-fluid rounded z-depth-1" zoomable=true width="75%" %}
+    {% include figure.html path="../assets/img/NOMA/OMA.jpg" class="img-fluid rounded z-depth-1" zoomable=true width="75%" %}
 </div>
 
 <p align="center">
