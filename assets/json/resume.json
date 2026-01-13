@@ -22,43 +22,23 @@
       }
     ]
   },
-  "work": [
-    {
-      "name": "Optimal Power Allocation and Sub-optimal Channel Assignment for Downlink NOMA System Using Deep Reinforcement Learning",
-      "position": "",
-      "url": "",
-      "startDate": "",
-      "endDate": "",
-      "summary": "",
-      "highlights": [""]
-    }
-  ],
-  "volunteer": [
-    {
-      "organization": "",
-      "location": "",
-      "position": "",
-      "url": "",
-      "startDate": "",
-      "endDate": "",
-      "summary": "",
-      "highlights": ["", ""]
-    }
-  ],
+  "work": [],
+  "volunteer": [],
   "education": [
     {
       "institution": "Carleton University",
       "location": "Ottawa, Canada",
-      "url": "",
+      "url": "https://graduate.carleton.ca/program/computer-science-masters-programs/",
       "area": "Computer Science (Data Science Specialization)",
       "studyType": "MS",
       "startDate": "2025-09-03",
       "endDate": "2027-08-31",
-      "score": "",
-      "courses": [""]
+      "score": ""
     },
     {
       "institution": "San Jose State University",
+      "location": "San Jose, California",
+      "url": "https://www.sjsu.edu/",
       "area": "Silicon Valley Software Technolog & AI Program",
       "studyType": "Certificate of Achievement",
       "startDate": "2024-07-15",
@@ -66,7 +46,8 @@
     },
     {
       "institution": "Sangmyung University",
-      "url": "",
+      "location": "Seoul, South Korea",
+      "url": "https://www.smu.ac.kr/eng1/index.do",
       "area": "Computer Science",
       "studyType": "BS",
       "startDate": "2019-03-01",
@@ -126,32 +107,17 @@
       "date": "2019"
     }
   ],
-  "certificates": [
-    {
-      "name": "",
-      "date": "",
-      "issuer": "",
-      "url": "",
-      "icon": ""
-    }
-  ],
+  "certificates": [],
   "publications": [
     {
-      "name": "",
+      "name": "Optimal Power Allocation and Sub-Optimal Channel Assignment for Downlink NOMA Systems Using Deep Reinforcement Learning",
       "publisher": "The Journal of Korean Institute of Communications and Information Sciences",
       "releaseDate": "2025-03-01",
       "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=p3MsBZMAAAAJ&citation_for_view=p3MsBZMAAAAJ:u5HHmVD_uO8C",
       "summary": ""
     }
   ],
-  "skills": [
-    {
-      "name": "",
-      "level": "",
-      "icon": "",
-      "keywords": [""]
-    }
-  ],
+  "skills": [],
   "languages": [
     {
       "language": "English",
@@ -164,28 +130,7 @@
       "icon": "🇰🇷"
     }
   ],
-  "interests": [
-    {
-      "name": "",
-      "icon": "",
-      "keywords": [""]
-    }
-  ],
-  "references": [
-    {
-      "name": "",
-      "icon": "",
-      "reference": ""
-    }
-  ],
-  "projects": [
-    {
-      "name": "",
-      "summary": "",
-      "highlights": [""],
-      "startDate": "",
-      "endDate": "",
-      "url": ""
-    }
-  ]
+  "interests": [],
+  "references": [],
+  "projects": []
 }
