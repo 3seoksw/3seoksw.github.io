@@ -1,10 +1,13 @@
 ---
-layout: page
+layout: post
 title: LION, Empowering MLLM with Dual-Level Visual Knowledge
+date: 2025-10-09
 description: Paper review of LION
-importance: 1
-category: MLLM
-related_publications: lion
+tags: MLLM
+categories: sample-posts
+giscus_comments: false
+related_posts: false
+related_publications: true
 ---
 
 The review is done with the following paper:<br>
@@ -26,7 +29,7 @@ These two enable the MLLM  to capture both global and local visual information 
 <p align="center">
     <i>Figure 1.</i>
     Comparison between existing MLLMs and LION
-    <a href="#1">[1]</a>.
+    <d-cite key="lion"></d-cite>
 </p>
 
 ## Related Works -- Visual Grounding
@@ -36,7 +39,7 @@ These two enable the MLLM  to capture both global and local visual information 
 <p align="center">
     <i>Figure 2.</i>
     Representation of object description and bounding box which follows Markdown link format
-    <a href="#2">[2]</a>.
+    <d-cite key="peng2023kosmos"></d-cite>
 </p>
 
 {% include figure.liquid path="../assets/img/LION/kosmos-2.png" class="img-fluid rounded z-depth-1" zoomable=true %}
@@ -44,7 +47,7 @@ These two enable the MLLM  to capture both global and local visual information 
 <p align="center">
     <i>Figure 3.</i>
     Kosmos-2 offering object description with bounding box
-    <a href="#2">[2]</a>.
+    <d-cite key="peng2023kosmos"></d-cite>
 </p>
 
 While there are numerous works on assigning visual grounding tasks to MLLMs, Kosmos-2 is a great example for comparison with the LION model.
@@ -64,7 +67,7 @@ However, the Kosmos-2 still fall short in handling broader aspect of visual task
 <p align="center">
     <i>Figure 4.</i>
     Overview of LION
-    <a href="#1">[1]</a>.
+    <d-cite key="lion"></d-cite>
 </p>
 
 ### Spatial Visual Knowledge
@@ -74,7 +77,7 @@ However, the Kosmos-2 still fall short in handling broader aspect of visual task
 <p align="center">
     <i>Figure 5.</i>
     Representation of how LION handle spatial visual knowledge
-    <a href="#1">[1]</a>.
+    <d-cite key="lion"></d-cite>
 </p>
 
 To incorporate spatial-aware visual knowledge into the model, the paper suggests reformatting the datasets into a unified format, that combines natural language descriptions and object coordinates enclosed in square brackets for instruction tuning, just like Kosmos-2 did.
@@ -105,7 +108,7 @@ To address these two conflicts, a stage-wise instruction tuning strategy is appl
 <p align="center">
     <i>Figure 6.</i>
     The stage-wise instruction-tuning strategy
-    <a href="#1">[1]</a>.
+    <d-cite key="lion"></d-cite>
 </p>
 
 $$
@@ -162,7 +165,7 @@ This method helps guide the model to select valuable information from the tags a
 <p align="center">
     <i>Figure 8.</i>
     Instruction template with soft prompt
-    <a href="#1">[1]</a>.
+    <d-cite key="lion"></d-cite>
 </p>
 
 ## Experimental Results
@@ -172,7 +175,7 @@ This method helps guide the model to select valuable information from the tags a
 <p align="center">
     <i>Table 1.</i>
     Comparison on image vaptioning and Visual Question Answering (VQA). The best and second performances for each benchmark are indicated in bold and underline, respectively
-    <a href="#1">[1]</a>.
+    <d-cite key="lion"></d-cite>
 </p>
 
 {% include figure.liquid path="../assets/img/LION/tab2.png" class="img-fluid rounded z-depth-1" zoomable=true %}
@@ -180,7 +183,7 @@ This method helps guide the model to select valuable information from the tags a
 <p align="center">
     <i>Table 2.</i>
     Comparison on Referring Expression Comprehension (REC)
-    <a href="#1">[1]</a>.
+    <d-cite key="lion"></d-cite>
 </p>
 
 {% include figure.liquid path="../assets/img/LION/tab3.png" class="img-fluid rounded z-depth-1" zoomable=true %}
@@ -188,7 +191,7 @@ This method helps guide the model to select valuable information from the tags a
 <p align="center">
     <i>Table 3.</i>
     Evaluation of object hallucination
-    <a href="#1">[1]</a>.
+    <d-cite key="lion"></d-cite>
 </p>
 
 The LION architecture effectively addresses the challenge of insufficient visual knowledge extraction and reasoning, which affects existing Multimodal Large Language Models (MLLMs) that typically rely only on coarsely aligned image-text pairs.
