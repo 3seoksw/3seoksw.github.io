@@ -42,13 +42,8 @@ These two enable the MLLM  to capture both global and local visual information 
     <d-cite key="peng2023kosmos"></d-cite>
 </p>
 
-{% include figure.liquid path="../assets/img/LION/kosmos-2.png" class="img-fluid rounded z-depth-1" zoomable=true %}
-
-<p align="center">
-    <i>Figure 3.</i>
-    Kosmos-2 offering object description with bounding box
-    <d-cite key="peng2023kosmos"></d-cite>
-</p>
+{% include figure.liquid path="assets/img/LION/kosmos-2.png" class="img-fluid rounded z-depth-1" zoomable=true %}
+<i>Figure 3.</i> Kosmos-2 offering object description with bounding box <d-cite key="peng2023kosmos"></d-cite>.
 
 While there are numerous works on assigning visual grounding tasks to MLLMs, Kosmos-2 is a great example for comparison with the LION model.
 Kosmos-2 converts existing datasets into a Markdown-style link format.
