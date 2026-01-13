@@ -29,7 +29,7 @@ These two enable the MLLM  to capture both global and local visual information 
 <p align="center">
     <i>Figure 1.</i>
     Comparison between existing MLLMs and LION
-    <d-cite key="lion"></d-cite>
+    <a href="#1">[1]</a>.
 </p>
 
 ## Related Works -- Visual Grounding
@@ -39,7 +39,7 @@ These two enable the MLLM  to capture both global and local visual information 
 <p align="center">
     <i>Figure 2.</i>
     Representation of object description and bounding box which follows Markdown link format
-    <d-cite key="peng2023kosmos"></d-cite>
+    <a href="#2">[1]</a>.
 </p>
 
 {% include figure.liquid path="assets/img/LION/kosmos-2.png" class="img-fluid rounded z-depth-1" zoomable=true %}
@@ -62,7 +62,7 @@ However, the Kosmos-2 still fall short in handling broader aspect of visual task
 <p align="center">
     <i>Figure 4.</i>
     Overview of LION
-    <d-cite key="lion"></d-cite>
+    <a href="#1">[1]</a>.
 </p>
 
 ### Spatial Visual Knowledge
@@ -72,7 +72,7 @@ However, the Kosmos-2 still fall short in handling broader aspect of visual task
 <p align="center">
     <i>Figure 5.</i>
     Representation of how LION handle spatial visual knowledge
-    <d-cite key="lion"></d-cite>
+    <a href="#1">[1]</a>.
 </p>
 
 To incorporate spatial-aware visual knowledge into the model, the paper suggests reformatting the datasets into a unified format, that combines natural language descriptions and object coordinates enclosed in square brackets for instruction tuning, just like Kosmos-2 did.
@@ -103,7 +103,7 @@ To address these two conflicts, a stage-wise instruction tuning strategy is appl
 <p align="center">
     <i>Figure 6.</i>
     The stage-wise instruction-tuning strategy
-    <d-cite key="lion"></d-cite>
+    <a href="#1">[1]</a>.
 </p>
 
 $$
@@ -160,7 +160,7 @@ This method helps guide the model to select valuable information from the tags a
 <p align="center">
     <i>Figure 8.</i>
     Instruction template with soft prompt
-    <d-cite key="lion"></d-cite>
+    <a href="#1">[1]</a>.
 </p>
 
 ## Experimental Results
@@ -170,7 +170,7 @@ This method helps guide the model to select valuable information from the tags a
 <p align="center">
     <i>Table 1.</i>
     Comparison on image vaptioning and Visual Question Answering (VQA). The best and second performances for each benchmark are indicated in bold and underline, respectively
-    <d-cite key="lion"></d-cite>
+    <a href="#1">[1]</a>.
 </p>
 
 {% include figure.liquid path="../assets/img/LION/tab2.png" class="img-fluid rounded z-depth-1" zoomable=true %}
@@ -178,7 +178,7 @@ This method helps guide the model to select valuable information from the tags a
 <p align="center">
     <i>Table 2.</i>
     Comparison on Referring Expression Comprehension (REC)
-    <d-cite key="lion"></d-cite>
+    <a href="#1">[1]</a>.
 </p>
 
 {% include figure.liquid path="../assets/img/LION/tab3.png" class="img-fluid rounded z-depth-1" zoomable=true %}
@@ -186,7 +186,7 @@ This method helps guide the model to select valuable information from the tags a
 <p align="center">
     <i>Table 3.</i>
     Evaluation of object hallucination
-    <d-cite key="lion"></d-cite>
+    <a href="#1">[1]</a>.
 </p>
 
 The LION architecture effectively addresses the challenge of insufficient visual knowledge extraction and reasoning, which affects existing Multimodal Large Language Models (MLLMs) that typically rely only on coarsely aligned image-text pairs.
