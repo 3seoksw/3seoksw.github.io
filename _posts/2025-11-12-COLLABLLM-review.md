@@ -29,6 +29,7 @@ Together, these make the model more proactive and lead to higher task performanc
 
 <div class="caption">
     Figure 1. Comparisons between existing LLMs and COLLABLLM.
+    <d-cite key="collabllm"></d-cite>
 </div>
 
 ## Overview of COLLABLLM
