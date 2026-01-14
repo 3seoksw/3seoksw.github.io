@@ -30,9 +30,9 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/cv/";
           },
-        },{id: "post-lion-empowering-mllm-with-dual-level-visual-knowledge",
+        },{id: "post-collabllm-from-passive-responders-to-active-collaborators",
         
-          title: "LION, Empowering MLLM with Dual-Level Visual Knowledge",
+          title: "COLLABLLM, From Passive Responders to Active Collaborators",
         
         description: "Paper review of COLLABLLM",
         section: "Posts",
