@@ -1,6 +1,6 @@
 ---
 layout: post
-title: LION, Empowering MLLM with Dual-Level Visual Knowledge
+title: COLLABLLM, From Passive Responders to Active Collaborators
 date: 2025-11-12
 description: Paper review of COLLABLLM
 tags: LLM
@@ -26,7 +26,10 @@ To address the aforementioned problems, COLLABLLM introduces two ideas which are
 Together, these make the model more proactive and lead to higher task performance and better interactivity across multiple turns.
 
 {% include figure.liquid path="../assets/img/COLLABLLM/comp_collabllm.png" class="img-fluid rounded z-depth-1" zoomable=true %}
-Figure 1. Comparisons between existing LLMs and COLLABLLM.
+
+<div class="caption">
+    Figure 1. Comparisons between existing LLMs and COLLABLLM.
+</div>
 
 ## Overview of COLLABLLM
 
@@ -43,11 +46,14 @@ Collaborative simulation is to sample future conversations given the context sta
 You can think of collaborative simulation as a conversation lookahead method between user and the model.
 However, it is impossible to know what would users ask in near future, and even corresponding replies to unknown user's future input.
 
-To make this feasible for enabling lookahead of conversations, a simulated user such as GPT 4o that imitates the actual user generates user's future input. 
+To make this feasible for enabling lookahead of conversations, a simulated user such as GPT 4o that imitates the actual user generates user's future input.
 In collaborative simulation, forward sampling is used to retrieve unknown future dialogue between the user and the model.
 Ultimately, this enables the model take future conversation into account and choose responses aligned with a long-term goal, instead of a current-focused goal.
 
 Finally, they apply reinforcement learning fine-tuning such as SFT, PPO, and DPO using the MR function.
 
 {% include figure.liquid path="../assets/img/COLLABLLM/framework.png" class="img-fluid rounded z-depth-1" zoomable=true %}
-Figure 2. COLLABLLM Framework.
+
+<div class="caption">
+    Figure 2. COLLABLLM Framework.
+</div>
