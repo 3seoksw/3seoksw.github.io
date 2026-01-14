@@ -120,7 +120,9 @@ $$
 t_j^{f_w} = t_{j+1:j+w} \leftrightarrow t_j^f = t_{j+1:K}
 $$
 
-## Experimental Setup
+## Experiments
+
+### Experimental Setup
 
 COLLABLLM is based on Llama 3.1, and it has four variants.
 First two are offline models, supervised fine-tuning model and offline DPO model.
@@ -160,7 +162,7 @@ In addition to the task-specific metrics, two task-agnostic metrics are incorpor
     Figure 5. Simulated Multiturn Environment Datasets.
 </div>
 
-## Results of Simulated Experiments
+### Results of Simulated Experiments
 
 {% include figure.liquid path="../assets/img/COLLABLLM/tab1.png" class="img-fluid rounded z-depth-1" zoomable=true %}
 
@@ -168,4 +170,25 @@ In addition to the task-specific metrics, two task-agnostic metrics are incorpor
     Table 1. Evaluation results on our multiturn datasets. Green zone: Baselines; Orange zone: Variants of COLLABLLMs. Rel. Improv. indicates the relative improvements of COLLABLLMs trained with Online DPO over Proactive Base. 
 </div>
 
+### Ablation Study on Reward Mechanism
+
 {% include figure.liquid path="../assets/img/COLLABLLM/ablation.png" class="img-fluid rounded z-depth-1" zoomable=true %}
+
+<div class="caption">
+    Figure 6. Ablation Study of Reward Mechanisms on MediumDocEdit-Chat. This figure compares three immediate reward mechanisms with three MR variants.
+</div>
+
+### Real-world User Study
+
+{% include figure.liquid path="../assets/img/COLLABLLM/real-world.png" class="img-fluid rounded z-depth-1" zoomable=true %}
+
+<div class="caption">
+    Figure 7. Real-world user study includes 201 participants interacting with Base, Proactive Base, and COLLABLLM. (a) document quality (b) overall interaction experience (c) spent time (d) additional assessments every three turns.
+</div>
+
+## Conclusion
+
+- Most LLMs make passive and short-sighted output due to single-turn training
+- Add a future lookahead
+- COLLABLLM introduces collaborative simulator and multiturn-aware reward (MR)
+  $$\rightarrow$$ Shows effectiveness, efficiency, engagement throughout extensive simulated and real-world evaluations.
