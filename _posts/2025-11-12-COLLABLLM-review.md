@@ -83,17 +83,89 @@ $$
 \end{align*}
 $$
 
+{% include figure.liquid path="../assets/img/COLLABLLM/MR_simulation.png" class="img-fluid rounded z-depth-1" zoomable=true %}
+
+<div class="caption">
+    Figure 3. Multiturn-aware Rewards from collaborative simulation.
+</div>
+
 ### Conversation-level Reward
 
 $$
 R^{*}(t|g) = R_{\text{ext}}(t, g) + R_{\text{int}}(t)
 $$
 
-- Extrinsic Reward: how well the conversation achieves the user's goal $$g$$
-  - $$R_{\text{ext}}(t, g) = S(\text{Extract}(t), y_g)$$
+- Extrinsic Reward
+  - $$R_{\text{ext}}(t, g) = S(\text{Extract}(t), y_g)$$ evaluates how well the conversation achieves the user's goal $$g$$
   - $$S(\cdot, \cdot)$$ evaluates task-specific metrics (_e.g._, accuracy or similarity)
   - $$\text{Extract(t)}$$ extracts the final response (solution) from the conversation $$t$$
-- Intrinsic Reward:
+- Intrinsic Reward
   - $$R_{\text{int}}(t) = - min[\lambda \cdot \text{TokenCount}(t), 1] + R_{LLM}(t)$$, comprises penalty and helpfulness
   - $$\lambda$$ controls the penalty for the number of tokens being used
   - $$R_{LLM}$$ evaluates user-valued objectives (_e.g._, engagement or interactivity) <d-cite key="zheng2023judging"><d-cite>
+
+### Forward Sampling
+
+$$
+t_j^f \sim P(t_j^f | t_{1:j})
+$$
+
+- User Simulator
+  - Simulator $$U$$ generates a probabilistic distribution $$P(u|t)$$
+- Sampling Method
+  - Naive approach is to use Monte Carlo Sampling $$\rightarrow$$ computationally expensive
+  - Introduce a window size $$w$$ (trade objectives for huge cost savings)
+
+$$
+t_j^{f_w} = t_{j+1:j+w} \leftrightarrow t_j^f = t_{j+1:K}
+$$
+
+## Experimental Setup
+
+COLLABLLM is based on Llama 3.1, and it has four variants.
+First two are offline models, supervised fine-tuning model and offline DPO model.
+Offline models only use the pre-determined datasets to update the model’s policy network during training.
+Then from the first two models, these two are further trained to online models, PPO and online DPO model.
+Online models are participating in the simulation to compute new MRs and update the policy network during training.
+
+So the difference between offline models and online models is that offline models do not participate in the simulation and online models do.
+
+Two baseline models will be used in the paper.
+One is called based model which is vanila Llama-3.1.
+The second one is called proactive base model, and it is a base model with proactive prompt engineering model.
+Proactive base model is simply base model given with the prompt as such figure 4 to be more collaborative and interactive.
+
+{% include figure.liquid path="../assets/img/COLLABLLM/MR.png" class="img-fluid rounded z-depth-1" zoomable=true %}
+
+<div class="caption">
+    Figure 4. Generating high-quality conversation data with Multiturn-aware Rewards (MR).
+</div>
+
+And COLLABLLM is evaluated with the baseline models in three different environment datasets.
+
+First is MediumDocEdit-Chat dataset focusing on document editing sampled from Medium articles.
+It is evaluated with BLEU score measuring similarity between the extracted document and the original article.
+
+Second is BigCodeBench-Chat dataset meant for coding assistance.
+It is sampled from BigCodeBench dataset and is using pass rate as an evaluation metric.
+
+Finally, MATH-chat dataset is used and it’s sampled from MATH dataset.
+The task is evaluated with the accuracy metric.
+
+In addition to the task-specific metrics, two task-agnostic metrics are incorporated, one is average token count and the other is interactivity.
+
+{% include figure.liquid path="../assets/img/COLLABLLM/simulated_env.jpg" class="img-fluid rounded z-depth-1" zoomable=true %}
+
+<div class="caption">
+    Figure 5. Simulated Multiturn Environment Datasets.
+</div>
+
+## Results of Simulated Experiments
+
+{% include figure.liquid path="../assets/img/COLLABLLM/tab1.png" class="img-fluid rounded z-depth-1" zoomable=true %}
+
+<div class="caption">
+    Table 1. Evaluation results on our multiturn datasets. Green zone: Baselines; Orange zone: Variants of COLLABLLMs. Rel. Improv. indicates the relative improvements of COLLABLLMs trained with Online DPO over Proactive Base. 
+</div>
+
+{% include figure.liquid path="../assets/img/COLLABLLM/ablation.png" class="img-fluid rounded z-depth-1" zoomable=true %}
