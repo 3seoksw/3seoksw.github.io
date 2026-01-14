@@ -5,7 +5,7 @@ title: CV
 nav: true
 nav_order: 3
 cv_pdf: CV_WooSeok_Kim.pdf # you can also use external links here
-description: 
+description: Master's in Computer Science
 toc:
   sidebar: left
 ---

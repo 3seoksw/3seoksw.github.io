@@ -6,7 +6,7 @@ description: Modifying the soft prompting into dynamic soft prompting
 img: assets/img/LION/dynamic_lion.jpg
 importance: 1
 category: MLLM
-related_publications: lion
+related_publications: false
 ---
 
 ## Introduction
@@ -200,4 +200,3 @@ Unfortunately, ours didn’t perform better than the original LION as image capt
 <a id="1" href="https://openaccess.thecvf.com/content/CVPR2024/liquid/Chen_LION_Empowering_Multimodal_Large_Language_Model_with_Dual-Level_Visual_Knowledge_CVPR_2024_paper.html">[1]</a>
 Chen, G., Shen, L., Shao, R., Deng, X., & Nie, L. (2024). Lion: Empowering multimodal large language model with dual-level visual knowledge.
 In <i>Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition</i> (pp. 26540-26550).
-

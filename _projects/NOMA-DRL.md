@@ -6,7 +6,7 @@ description: Application of custom REINFORCE algorithm to downlink NOMA system
 img: assets/img/NOMA/NOMA_paper_preview.png
 importance: 1
 category: DRL
-related_publications: JRA-DRL
+related_publications: false
 ---
 
 [This research](https://github.com/3seoksw/Downlink-NOMA-with-RL) is published in [The Journal of Korean Institute of Communication and Information Scienes (JKICS)](https://journal.kics.or.kr/) in March 2025.
@@ -56,4 +56,3 @@ While serveral works have proposed to tackle these problems, there exists an app
 C. He, Y. Hu, Y. Chen and B. Zeng, "Joint Power Allocation and Channel Assignment for NOMA With Deep Reinforcement Learning," in
 <i>IEEE Journal on Selected Areas in Communications</i>,
 vol. 37, no. 10, pp. 2200-2210, Oct. 2019, doi: 10.1109/JSAC.2019.2933762.
-
