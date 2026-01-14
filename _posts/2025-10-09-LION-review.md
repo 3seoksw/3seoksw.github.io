@@ -4,7 +4,7 @@ title: LION, Empowering MLLM with Dual-Level Visual Knowledge
 date: 2025-10-09
 description: Paper review of LION
 tags: MLLM
-categories: sample-posts
+categories: paper-review
 giscus_comments: false
 related_posts: false
 related_publications: true
