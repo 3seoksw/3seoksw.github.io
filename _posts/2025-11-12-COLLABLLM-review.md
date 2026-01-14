@@ -58,3 +58,42 @@ Finally, they apply reinforcement learning fine-tuning such as SFT, PPO, and DPO
 <div class="caption">
     Figure 2. COLLABLLM Framework.
 </div>
+
+## Problem Formulation
+
+- Multiple Turns
+
+$$
+\begin{align*}
+    & t_j = \{u_j, m_j \}, \text{ at turn } j=1, \cdots, K \\
+    & u_j: \text{ user input} \\
+    & m_j: \text{ model output} \\
+    & t_{1:j} = \{ t_1, \cdots, t_j \} \\
+    & t_{j}^{h} = t_{1:j} \cup \{u_j\}
+\end{align*}
+$$
+
+- Multiturn-aware Reward (MR)
+
+$$
+\begin{align*}
+    & R^{*}(t_{1:K}|g): \text{ objective given some ground-truth goal} \\
+    & MR(m_j | t_j^{h}, g) = \mathbb{E}_{t_j^f\sim P(t_j^f | t_{1:j})}[R^{*}(t_{1:j}\cup t_j^h | g)] \\
+    & t_j^f = t_{j+1:K}: \text{ forward trajectory following } j\text{-th turn}
+\end{align*}
+$$
+
+### Conversation-level Reward
+
+$$
+R^{*}(t|g) = R_{\text{ext}}(t, g) + R_{\text{int}}(t)
+$$
+
+- Extrinsic Reward: how well the conversation achieves the user's goal $$g$$
+  - $$R_{\text{ext}}(t, g) = S(\text{Extract}(t), y_g)$$
+  - $$S(\cdot, \cdot)$$ evaluates task-specific metrics (_e.g._, accuracy or similarity)
+  - $$\text{Extract(t)}$$ extracts the final response (solution) from the conversation $$t$$
+- Intrinsic Reward:
+  - $$R_{\text{int}}(t) = - min[\lambda \cdot \text{TokenCount}(t), 1] + R_{LLM}(t)$$, comprises penalty and helpfulness
+  - $$\lambda$$ controls the penalty for the number of tokens being used
+  - $$R_{LLM}$$ evaluates user-valued objectives (_e.g._, engagement or interactivity) <d-cite key="zheng2023judging"><d-cite>
