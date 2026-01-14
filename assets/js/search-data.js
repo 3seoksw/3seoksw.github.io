@@ -34,6 +34,17 @@ ninja.data = [{
         
           title: "LION, Empowering MLLM with Dual-Level Visual Knowledge",
         
+        description: "Paper review of COLLABLLM",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2025/COLLABLLM-review/";
+          
+        },
+      },{id: "post-lion-empowering-mllm-with-dual-level-visual-knowledge",
+        
+          title: "LION, Empowering MLLM with Dual-Level Visual Knowledge",
+        
         description: "Paper review of LION",
         section: "Posts",
         handler: () => {
