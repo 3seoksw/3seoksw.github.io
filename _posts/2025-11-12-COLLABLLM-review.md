@@ -2,7 +2,7 @@
 layout: post
 title: COLLABLLM, From Passive Responders to Active Collaborators
 date: 2025-11-12
-description: Paper review of COLLABLLM
+description: Multiturn-aware LLM aiming for long-term goal
 tags: LLM
 categories: paper-review
 giscus_comments: false
@@ -11,7 +11,7 @@ related_publications: true
 ---
 
 The review is done with the following paper and the figures used for this article are derived from the paper:<br>
-[COLLABLLM: From Passive Responders to Active Collaborators](https://arxiv.org/abs/2502.00640).
+[COLLABLLM: From Passive Responders to Active Collaborators](https://arxiv.org/abs/2502.00640) <d-cite key="collabllm"></d-cite>.
 
 ## Abstract
 
@@ -102,7 +102,9 @@ $$
 - Intrinsic Reward
   - $$R_{\text{int}}(t) = - min[\lambda \cdot \text{TokenCount}(t), 1] + R_{LLM}(t)$$, comprises penalty and helpfulness
   - $$\lambda$$ controls the penalty for the number of tokens being used
-  - $$R_{LLM}$$ evaluates user-valued objectives (_e.g._, engagement or interactivity) <d-cite key="zheng2023judging"><d-cite>
+  - $$R_{LLM}$$ evaluates user-valued objectives (_e.g._, engagement or interactivity)
+
+The above uses LLM as a judge in terms of evaluating the intrinsic variables <d-cite key="zheng2023judging"><d-cite>.
 
 ### Forward Sampling
 
@@ -111,7 +113,7 @@ t_j^f \sim P(t_j^f | t_{1:j})
 $$
 
 - User Simulator
-  - Simulator $$U$$ generates a probabilistic distribution $$P(u|t)$$
+  - Simulator $$U$$ generates a probabilistic distribution $$P(u \mid t)$$
 - Sampling Method
   - Naive approach is to use Monte Carlo Sampling $$\rightarrow$$ computationally expensive
   - Introduce a window size $$w$$ (trade objectives for huge cost savings)
