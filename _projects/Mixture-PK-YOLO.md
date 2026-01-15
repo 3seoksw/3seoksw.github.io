@@ -6,6 +6,7 @@ description: Brain tumor detection using YOLO-based model
 img: assets/img/PK-YOLO/mixture_pk-yolo.jpg
 importance: 1
 category: Vision
+bibliography: pk-yolo.bib
 related_publications: true
 ---
 
