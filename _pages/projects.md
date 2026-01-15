@@ -5,7 +5,7 @@ permalink: /projects/
 description: You can find the project in my github repo
 nav: true
 nav_order: 1
-display_categories: [MLLM, DRL]
+display_categories: [MLLM, DRL, Vision]
 horizontal: false
 ---
 
