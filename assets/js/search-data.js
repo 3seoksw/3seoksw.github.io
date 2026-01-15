@@ -34,7 +34,7 @@ ninja.data = [{
         
           title: "COLLABLLM, From Passive Responders to Active Collaborators",
         
-        description: "Paper review of COLLABLLM",
+        description: "Multiturn-aware LLM aiming for long-term goal",
         section: "Posts",
         handler: () => {
           
@@ -105,6 +105,11 @@ ninja.data = [{
           description: "Modifying the soft prompting into dynamic soft prompting",
           section: "Projects",handler: () => {
               window.location.href = "/projects/Dynamic-LION/";
+            },},{id: "projects-collabllm-from-passive-responders-to-active-collaborators",
+          title: 'COLLABLLM, From Passive Responders to Active Collaborators',
+          description: "Brain tumor detection using YOLO-based model",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/Mixture-PK-YOLO/";
             },},{
         id: 'social-cv',
         title: 'CV',
