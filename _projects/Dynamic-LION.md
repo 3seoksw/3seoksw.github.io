@@ -6,8 +6,10 @@ description: Modifying the soft prompting into dynamic soft prompting
 img: assets/img/LION/dynamic_lion.jpg
 importance: 1
 category: MLLM
-related_publications: false
+related_publications: true
 ---
+
+[This project](https://github.com/3seoksw/Dynamic_LION) is built based on the [paper](https://openaccess.thecvf.com/content/CVPR2024/html/Chen_LION_Empowering_Multimodal_Large_Language_Model_with_Dual-Level_Visual_Knowledge_CVPR_2024_paper.html) <d-cite key="lion"></d-cite>.
 
 ## Introduction
 
