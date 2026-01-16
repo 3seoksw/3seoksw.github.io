@@ -1,6 +1,6 @@
 ---
 layout: distill
-title: COLLABLLM, From Passive Responders to Active Collaborators
+title: Mixture PK-YOLO
 date: 2025-12-03
 description: Brain tumor detection using YOLO-based model
 img: assets/img/PK-YOLO/mixture_pk-yolo.jpg
