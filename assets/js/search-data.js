@@ -45,7 +45,7 @@ ninja.data = [{
         
           title: "LION, Empowering MLLM with Dual-Level Visual Knowledge",
         
-        description: "Paper review of LION",
+        description: "Dual-level visual knowledge equipped MLLM with soft prompting",
         section: "Posts",
         handler: () => {
           
@@ -105,8 +105,8 @@ ninja.data = [{
           description: "Modifying the soft prompting into dynamic soft prompting",
           section: "Projects",handler: () => {
               window.location.href = "/projects/Dynamic-LION/";
-            },},{id: "projects-collabllm-from-passive-responders-to-active-collaborators",
-          title: 'COLLABLLM, From Passive Responders to Active Collaborators',
+            },},{id: "projects-mixture-pk-yolo",
+          title: 'Mixture PK-YOLO',
           description: "Brain tumor detection using YOLO-based model",
           section: "Projects",handler: () => {
               window.location.href = "/projects/Mixture-PK-YOLO/";
