@@ -32,4 +32,4 @@ joined [iML](https://iml.carleton.ca/) as a Research Assistant, where I am curre
 My current interests are **LLM Alignment**, **Preference Optimization**, and **Applied Machine Learning**.
 
 Before entering Carleton University, from June 2023 to February 2025, I worked as an undergraduate research intern in [Dr. KyungSeop Shin](https://cs.smu.ac.kr/cs/faculty/faculty.do?mode=view&empNo=10881398&pager.offset=0&pagerLimit=20)'s [Network Information Systems Lab](https://nisl.smu.ac.kr), where I focused on applying **Reinforcement Learning (RL)** to networking systems.
-My past research interest areas were: **Decision-making Systems**, **Roboticsf**, **Reinforcement Learning**, and **Applied Machine Learning**.
+My past research interest areas were: **Decision-making Systems**, **Robotics**, **Reinforcement Learning**, and **Applied Machine Learning**.
