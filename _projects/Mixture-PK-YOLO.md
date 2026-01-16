@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: distill
 title: COLLABLLM, From Passive Responders to Active Collaborators
 date: 2025-12-03
 description: Brain tumor detection using YOLO-based model
@@ -148,7 +148,7 @@ Then, the reduced feature maps are given to the score function thtat maps,
 $$
 \begin{align*}
     & z_k^{(n)} = g_n(\tilde{F}_k^{(n)}(X)) \in \mathbb{R} \\
-    & \rightarrow \bm{z}^{(n)} = [z^{(n)}_1, z^{(n)}_2, z^{(n)}_3 ] \in \mathbb{R}^3.
+    & \rightarrow \mathbb{z}^{(n)} = [z^{(n)}_1, z^{(n)}_2, z^{(n)}_3 ] \in \mathbb{R}^3.
 \end{align*}
 $$
 
