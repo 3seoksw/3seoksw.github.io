@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: distill
 title: COLLABLLM, From Passive Responders to Active Collaborators
 date: 2025-11-12
 description: Multiturn-aware LLM aiming for long-term goal
@@ -7,6 +7,7 @@ tags: LLM
 categories: paper-review
 giscus_comments: false
 related_posts: false
+bibliography: pk-yolo.bib
 related_publications: true
 ---
 

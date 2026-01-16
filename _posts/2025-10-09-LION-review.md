@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: distill
 title: LION, Empowering MLLM with Dual-Level Visual Knowledge
 date: 2025-10-09
 description: Paper review of LION
@@ -7,11 +7,12 @@ tags: MLLM
 categories: paper-review
 giscus_comments: false
 related_posts: false
+bibliography: pk-yolo.bib
 related_publications: true
 ---
 
 The review is done with the following paper:<br>
-[LION: Empowering Multimodal Large Language Model with Dual-Level Visual Knowledge](https://openaccess.thecvf.com/content/CVPR2024/liquid/Chen_LION_Empowering_Multimodal_Large_Language_Model_with_Dual-Level_Visual_Knowledge_CVPR_2024_paper.html).
+[LION: Empowering Multimodal Large Language Model with Dual-Level Visual Knowledge](https://openaccess.thecvf.com/content/CVPR2024/liquid/Chen_LION_Empowering_Multimodal_Large_Language_Model_with_Dual-Level_Visual_Knowledge_CVPR_2024_paper.html) <d-cite key="lion"></d-cite>.
 
 ## Abstract
 
