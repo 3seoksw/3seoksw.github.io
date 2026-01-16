@@ -1,11 +1,12 @@
 ---
-layout: page
+layout: distill
 title: Dynamic LION
 date: 2025-11-30
 description: Modifying the soft prompting into dynamic soft prompting
 img: assets/img/LION/dynamic_lion.jpg
 importance: 1
 category: Coursework
+bibliography: pk-yolo.bib
 related_publications: true
 ---
 
