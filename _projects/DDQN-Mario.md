@@ -5,7 +5,7 @@ date: 2024-01-31 20:00:00-0400
 description: DDQN implementaion using Mario (gym) API
 img: assets/img/mario/mario_1_1_showcase.gif
 importance: 1
-category: DRL
+category: Personal
 related_publications: vanhasselt2015deep, pytorch-ddqn, mnih2013playing
 ---
 

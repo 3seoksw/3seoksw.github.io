@@ -5,7 +5,7 @@ date: 2025-01-05
 description: Application of custom REINFORCE algorithm to downlink NOMA system
 img: assets/img/NOMA/NOMA_paper_preview.png
 importance: 1
-category: DRL
+category: Personal
 related_publications: false
 ---
 

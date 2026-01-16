@@ -5,7 +5,7 @@ date: 2025-12-03
 description: Brain tumor detection using YOLO-based model
 img: assets/img/PK-YOLO/mixture_pk-yolo.jpg
 importance: 1
-category: Vision
+category: Coursework
 bibliography: pk-yolo.bib
 related_publications: true
 ---

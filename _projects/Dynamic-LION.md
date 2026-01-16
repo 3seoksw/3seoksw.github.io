@@ -5,7 +5,7 @@ date: 2025-11-30
 description: Modifying the soft prompting into dynamic soft prompting
 img: assets/img/LION/dynamic_lion.jpg
 importance: 1
-category: MLLM
+category: Coursework
 related_publications: true
 ---
 
