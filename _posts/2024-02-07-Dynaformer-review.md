@@ -45,7 +45,7 @@ The following _Figure 1._ represents how batteries' voltage curves look like bas
 When given constant current, it forms a continuous curve as the graph on the far left.
 On the other hand, when given some variable current profiles with multiple transitions, the graphs differ from the other corresponding to the altering current.
 
-{% include figure.html path="../assets/img/dynaformer/fig1.png" class="img-fluid rounded z-depth-1" zoomable=true %}
+{% include figure.liquid path="../assets/img/dynaformer/fig1.png" class="img-fluid rounded z-depth-1" zoomable=true %}
 
 <div class="caption">
     <i>Figure 1.</i>
@@ -81,13 +81,13 @@ Transformer is all about understanding the context and the hidden meaning behind
 
 <div class="row mt-3">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="../assets/img/dynaformer/fig2-1.png" class="img-fluid rounded z-depth-1" zoomable=true %}
+        {% include figure.liquid path="../assets/img/dynaformer/fig2-1.png" class="img-fluid rounded z-depth-1" zoomable=true %}
     </div>
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="../assets/img/dynaformer/fig2-2.png" class="img-fluid rounded z-depth-1" zoomable=true %}
+        {% include figure.liquid path="../assets/img/dynaformer/fig2-2.png" class="img-fluid rounded z-depth-1" zoomable=true %}
     </div>
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="../assets/img/dynaformer/fig2-3.png" class="img-fluid rounded z-depth-1" zoomable=true %}
+        {% include figure.liquid path="../assets/img/dynaformer/fig2-3.png" class="img-fluid rounded z-depth-1" zoomable=true %}
     </div>
 </div>
 
@@ -125,7 +125,7 @@ By using $$(K, V)$$ from the encoder and $$(Q)$$ from the decoder, the decoder i
 ## Model Architecture
 
 <div align="center">
-    {% include figure.html path="../assets/img/dynaformer/fig2-3.png" class="img-fluid rounded z-depth-1" zoomable=true width="75%" %}
+    {% include figure.liquid path="../assets/img/dynaformer/fig2-3.png" class="img-fluid rounded z-depth-1" zoomable=true width="75%" %}
 </div>
 
 <div class="caption">
@@ -140,7 +140,7 @@ Note that the inputs of the encoder are current and voltage curves and the input
 then eventually outputs full discharge voltage curves.
 
 <div align="center">
-    {% include figure.html path="../assets/img/dynaformer/fig4.jpg" class="img-fluid rounded z-depth-1" zoomable=true width="75%" %}
+    {% include figure.liquid path="../assets/img/dynaformer/fig4.jpg" class="img-fluid rounded z-depth-1" zoomable=true width="75%" %}
 </div>
 
 <div class="caption">
@@ -154,13 +154,13 @@ The following figures specify each part from the Dynaformer.
 
 <div class="row mt-3">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="../assets/img/dynaformer/fig4-1.jpg" class="img-fluid rounded z-depth-1" zoomable=true %}
+        {% include figure.liquid path="../assets/img/dynaformer/fig4-1.jpg" class="img-fluid rounded z-depth-1" zoomable=true %}
     </div>
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="../assets/img/dynaformer/fig4-2.jpg" class="img-fluid rounded z-depth-1" zoomable=true %}
+        {% include figure.liquid path="../assets/img/dynaformer/fig4-2.jpg" class="img-fluid rounded z-depth-1" zoomable=true %}
     </div>
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="../assets/img/dynaformer/fig4-3.jpg" class="img-fluid rounded z-depth-1" zoomable=true %}
+        {% include figure.liquid path="../assets/img/dynaformer/fig4-3.jpg" class="img-fluid rounded z-depth-1" zoomable=true %}
     </div>
 </div>
 
@@ -176,7 +176,7 @@ The following figures specify each part from the Dynaformer.
 ### Embedding
 
 <div align="center">
-    {% include figure.html path="../assets/img/dynaformer/fig5.jpg" class="img-fluid rounded z-depth-1" zoomable=true width="75%" %}
+    {% include figure.liquid path="../assets/img/dynaformer/fig5.jpg" class="img-fluid rounded z-depth-1" zoomable=true width="75%" %}
 </div>
 
 <div class="caption">
@@ -193,7 +193,7 @@ The $$Q$$ represents current and voltage curves, the $$K$$ serves as a specifier
 ### Encoder
 
 <div align="center">
-    {% include figure.html path="../assets/img/dynaformer/fig6.jpg" class="img-fluid rounded z-depth-1" zoomable=true width="75%" %}
+    {% include figure.liquid path="../assets/img/dynaformer/fig6.jpg" class="img-fluid rounded z-depth-1" zoomable=true width="75%" %}
 </div>
 
 <div class="caption">
@@ -208,7 +208,7 @@ In order to find such information, multi-head self-attention cells are used. For
 ### Decoder
 
 <div align="center">
-    {% include figure.html path="../assets/img/dynaformer/fig7.jpg" class="img-fluid rounded z-depth-1" zoomable=true width="75%" %}
+    {% include figure.liquid path="../assets/img/dynaformer/fig7.jpg" class="img-fluid rounded z-depth-1" zoomable=true width="75%" %}
 </div>
 
 <div class="caption">
@@ -254,7 +254,7 @@ It measures how the model behaves when the input size is longer or shorter than 
 The following is the algorithm for measuring the RTE metric <d-cite key="dynaformer"></d-cite>.
 
 <div align="center">
-    {% include figure.html path="../assets/img/dynaformer/algo1.png" class="img-fluid rounded z-depth-1" zoomable=true width="75%" %}
+    {% include figure.liquid path="../assets/img/dynaformer/algo1.png" class="img-fluid rounded z-depth-1" zoomable=true width="75%" %}
 </div>
 
 ### Performance Evaluation
@@ -312,7 +312,7 @@ And for the final evaluation, real data will be used to see the performance of t
 #### Simluated Constant Current Profiles
 
 <div align="center">
-    {% include figure.html path="../assets/img/dynaformer/fig8.png" class="img-fluid rounded z-depth-1" zoomable=true width="75%" %}
+    {% include figure.liquid path="../assets/img/dynaformer/fig8.png" class="img-fluid rounded z-depth-1" zoomable=true width="75%" %}
 </div>
 
 <div class="caption">
@@ -325,7 +325,7 @@ And for the final evaluation, real data will be used to see the performance of t
 </div>
 
 <div align="center">
-    {% include figure.html path="../assets/img/dynaformer/fig9.png" class="img-fluid rounded z-depth-1" zoomable=true width="75%" %}
+    {% include figure.liquid path="../assets/img/dynaformer/fig9.png" class="img-fluid rounded z-depth-1" zoomable=true width="75%" %}
 </div>
 
 <div class="caption">
@@ -338,7 +338,7 @@ And for the final evaluation, real data will be used to see the performance of t
 </p>
 
 <div align="center">
-    {% include figure.html path="../assets/img/dynaformer/fig9.png" class="img-fluid rounded z-depth-1" zoomable=true width="75%" %}
+    {% include figure.liquid path="../assets/img/dynaformer/fig9.png" class="img-fluid rounded z-depth-1" zoomable=true width="75%" %}
 </div>
 
 <div class="caption">
@@ -351,7 +351,7 @@ And for the final evaluation, real data will be used to see the performance of t
 #### Simluated Variable Current Profiles
 
 <div align="center">
-    {% include figure.html path="../assets/img/dynaformer/fig10.png" class="img-fluid rounded z-depth-1" zoomable=true width="75%" %}
+    {% include figure.liquid path="../assets/img/dynaformer/fig10.png" class="img-fluid rounded z-depth-1" zoomable=true width="75%" %}
 </div>
 
 <div class="caption">
@@ -363,7 +363,7 @@ And for the final evaluation, real data will be used to see the performance of t
 </div>
 
 <div align="center">
-    {% include figure.html path="../assets/img/dynaformer/fig11.jpg" class="img-fluid rounded z-depth-1" zoomable=true width="75%" %}
+    {% include figure.liquid path="../assets/img/dynaformer/fig11.jpg" class="img-fluid rounded z-depth-1" zoomable=true width="75%" %}
 </div>
 
 <div class="caption">
@@ -375,7 +375,7 @@ And for the final evaluation, real data will be used to see the performance of t
 #### Implicit Ageing Inference
 
 <div align="center">
-    {% include figure.html path="../assets/img/dynaformer/fig12.png" class="img-fluid rounded z-depth-1" zoomable=true width="75%" %}
+    {% include figure.liquid path="../assets/img/dynaformer/fig12.png" class="img-fluid rounded z-depth-1" zoomable=true width="75%" %}
 </div>
 
 <div class="caption">
@@ -390,7 +390,7 @@ And for the final evaluation, real data will be used to see the performance of t
 #### Real data
 
 <div align="center">
-    {% include figure.html path="../assets/img/dynaformer/fig13.png" class="img-fluid rounded z-depth-1" zoomable=true width="75%" %}
+    {% include figure.liquid path="../assets/img/dynaformer/fig13.png" class="img-fluid rounded z-depth-1" zoomable=true width="75%" %}
 </div>
 
 <div class="caption">
