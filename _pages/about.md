@@ -6,7 +6,7 @@ permalink: /
 
 profile:
   align: right
-  image: WS_Kim_profile.JPG
+  image: WooSeokKim.jpg
   image_circular: false # crops the image to make it circular
   more_info: >
     <p>Master's Student</p>
